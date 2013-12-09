@@ -1,0 +1,105 @@
+@import 'toolbox'
+@import 'global'
+
+.wrap
+  margin-top: 60px
+
+.primary-header
+  +clearfix
+  margin: 30px 0
+  position: relative
+  
+  h1.site-title 
+    margin-bottom: 60px
+    a
+      background: url(/assets/woodshop-logo.svg)
+      display: inline-block
+      width: 192px
+      height: 110px
+      text-indent: -9999px
+      overflow: hidden
+  
+  .sub-title
+    color: rgba($tc_light, 0.5)
+    position: absolute
+    text-transform: uppercase
+    top: 72px
+    left: 30px
+    font-size: 1.4em
+  
+  form.search
+    position: absolute
+    top: 72px
+    right: 30px
+    input.st-search-input
+      height: 30px
+      +prefix-property(box-shadow, none)
+
+.nav-menu
+  float: right
+  
+.category-menu
+  @extend .nav-menu
+  float: left
+  
+.nav-menu, .category-menu
+  padding: 20px
+  font-size: 1em
+  a 
+    color: $tc_main
+    font-weight: bold
+    text-transform: uppercase
+    text-decoration: none
+    padding: 4px 0
+    &.is-current-page
+      color: white
+      margin: 0
+      padding: 4px 10px
+      background: $bg_dark
+
+.post-preview, .content
+  border: none
+  
+.post-image-link
+  display: block
+  text-align: center
+  
+.post-title, .buy
+  margin: 10px 0 0 0
+  
+.buy
+  display: block
+  float: right
+  text-decoration: none
+  
+.by, .by a
+  color: $tc_light
+
+.post-body
+  a
+    color: $tc_light
+  
+    &:hover
+      color: $tc_main
+      text-decoration: none
+      
+#map-canvas
+  height: 400px
+  margin: 30px
+  padding: 0px
+  img
+    max-width: none
+    
+.post-nav-link
+  background: none
+  &.previous
+    text-align: left
+  &.next
+    text-align: right
+    
+.tag-listing-item
+  @extend .post-listing-item
+.tag-listing-title
+  @extend .post-listing-title
+.tag-listing-count
+  @extend .post-listing-date

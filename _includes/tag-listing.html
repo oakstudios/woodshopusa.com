@@ -1,0 +1,8 @@
+<section class="tag-listing">
+  {% for tag in tags %}
+    <a href="{{tag.url}}" class="tag-listing-item">
+      <h1 class="tag-listing-title">{{tag.title | replace:' - ',', '}}</h1>
+      <span class="tag-listing-count">{{tag.posts.count}} product{% if tag.posts.count > 1 %}s{% endif %}</span>
+    </a>
+  {% endfor %}
+</section>

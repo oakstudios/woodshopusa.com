@@ -3,11 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta property="st:title" content="{{title}}">
+  <meta property="st:type" content="{{type}}">
+  {% if assets.size > 0 %}<meta property="st:image" content="{{assets.first.permalink}}">{% endif %}
+  {% if date %}<meta property="st:published_at" content="{{date | date_to_xmlschema}}">{% endif %}
   <title>{{site.title}} | {{title}}</title>
   <link rel="alternate" type="application/rss+xml" href="{{site.feed_url}}" />
-  <link rel="stylesheet" type="text/css" href="/styles/css/global.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/css/woodshop.css" />
   <script src="//use.edgefonts.net/source-sans-pro.js"></script>
-
+  {% if slug == 'map' %}<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <script src="/scripts/js/map.js"></script>{% endif %}
   {% if site.meta.head %}{{ site.meta.head }}{% endif %}
 </head>
 <body>
@@ -15,36 +20,58 @@
 
   <div class="wrap">
 
-    <header class="primary-header">
+    <header class="primary-header" data-swiftype-index="false">
+      
       <h1 class="site-title"><a href="/">{{site.title}}</a></h1>
+      <h2 class="sub-title">Crafted in the USA</h2>
+      <form class="search"><input type="text" id="st-search-input" class="st-search-input" /></form>
 
       <nav class="nav-menu">
         {% for page in site.pages %}
-          <a href="{{page.url}}"{% if page.url == url %} class="is-current-page"{% endif %}>{{page.title}}</a>
+        {% unless page.home? %}<a href="{{page.url}}"{% if page.url == url %} class="is-current-page"{% endif %}>{{page.title}}</a>{% endunless %}
+        {% endfor %}
+      </nav>
+      
+      <nav class="category-menu">
+        <a href="/"{% if home? %} class="is-current-page"{% endif %}>All</a>
+        {% assign sorted_categories = site.pages.products.taxonomy.category.tags | sort:'value' %}
+        {% for category in sorted_categories %}
+        <a href="{{category.url}}"{% if category.url == url %} class="is-current-page"{% endif %}>{{category.value}}</a>
         {% endfor %}
       </nav>
     </header>
-
+    
+    {% if slug == 'map' %}{% assign tags = site.pages.products.taxonomy.in.tags %}<div id="map-canvas"></div>{% endif %}
+    
     {% if type == 'page' and posts.size > 0 and body != '' %}
       <div class="page-summary body">{{ body }}</div>
     {% elsif type == 'post' or (type == 'page' and body != '') %}
       {% include "includes/body" %}
-    {% elsif type != 'post' and type != 'page' %}
-      <div class="page-summary body">Browsing <strong>{{ title }}</strong></div>
     {% endif %}
 
-    {% if posts.size > 0 and type == 'page' %}
+    {% if posts.size > 0 %}
       {% include "includes/post-grid" %}
-      <a href="{{ archive_url }}" class="view-all-button button">View all</a>
-    {% elsif posts.size > 0 %}
-      {% include "includes/post-listing" %}
+      {% if home? %}<a href="{{ archive_url }}" class="view-all-button button">View all</a>{% endif %}
+    {% elsif type != 'post' and tags.size > 0 %}
+      {% include "includes/tag-listing" %}
     {% endif %}
 
-    <p class="siteleaf-credit">Powered by <a href="http://siteleaf.com" target="_blank">Siteleaf</a></p>
+    <p class="siteleaf-credit" data-swiftype-index="false">Curated by <a href="http://oak.is" target="_blank">Oak</a>. Powered by <a href="http://siteleaf.com" target="_blank">Siteleaf</a>.</p>
   </div>
 
-  <script src="scripts/js/min/application.js"></script>
-
+  <script src="/scripts/js/min/application.js"></script>
+  <script type="text/javascript">
+    var Swiftype = window.Swiftype || {};
+    (function() {
+      Swiftype.key = 'XvEwxWqhzZY5rd8BwpKs';
+  
+      /** DO NOT EDIT BELOW THIS LINE **/
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = "//swiftype.com/embed.js";
+      var entry = document.getElementsByTagName('script')[0];
+      document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+    }());
+  </script>
   {% if site.meta.body_bottom %}{{ site.meta.body_bottom }}{% endif %}
 </body>
 </html>

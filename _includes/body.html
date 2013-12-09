@@ -5,7 +5,7 @@
     </div>
   {% endif %}
 
-  <h1 class="title padded">{{ title }}</h1>
+  <h1 class="title padded">{{ title }} <span class="by">by <a href="{{taxonomy.by.first.url}}">{{taxonomy.by.first.value}}</a></span></h1>
 
   {% if pages.size > 0 %}
     <div class="subpages padded">
@@ -20,12 +20,14 @@
 
     {% for tagset in taxonomy %}
       <div class="tagset">
-        <strong>{{tagset.key}}:</strong>
+        <strong>{{tagset.key | capitalize}}:</strong>
         {% for tag in tagset %}
-          <a href="{{tag.url}}" class="tag">{{tag.value}}</a>
+          <a href="{{tag.url}}" class="tag">{{tag.value | replace:' - ',', '}}</a>
         {% endfor %}
       </div>
     {% endfor %}
+    
+    <a href="{{meta.store_link}}" class="view-all-button button ss-cart" target="_blank">Buy at {{meta.store_link | remove_first:'http://' | remove_first:'htts://' | remove_first:'www.' | split:'/' | first}} - ${{meta.price}}</a>
   </div>
 
   {% if type == 'post' and (next or previous) %}
