@@ -9,7 +9,7 @@
   {% if date %}<meta property="st:published_at" content="{{date | date_to_xmlschema}}">{% endif %}
   <title>{{site.title}} | {{title | replace:site.pages.first.title, site.meta.subtitle}}</title>
   <link rel="alternate" type="application/rss+xml" href="{{site.feed_url}}" />
-  <link rel="stylesheet" type="text/css" href="/styles/css/woodshop.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/css/woodshop.css?20131210" />
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/628774/718122/css/fonts.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.symbolset.com/4c5f109e6780e4ee4ab1c4104b8bc42a099215ff/symbolset.css" />
   {% if slug == 'map' %}<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
@@ -56,8 +56,10 @@
     {% elsif type != 'post' and tags.size > 0 %}
       {% include "includes/tag-listing" %}
     {% endif %}
-
-    <p class="siteleaf-credit" data-swiftype-index="false">Made in Brooklyn, NY by <a href="http://oak.is" target="_blank">Oak</a>. Powered by <a href="http://www.siteleaf.com" target="_blank">Siteleaf</a>. Send us your <a href="mailto:woodshop@oakmade.com">product suggestions</a>.</p>
+    <footer class="credit" data-swiftype-index="false">
+      <p>Made in Brooklyn, NY by <a href="http://oak.is" target="_blank">Oak</a>. Powered by <a href="http://www.siteleaf.com" target="_blank">Siteleaf</a>. Send us your <a href="mailto:woodshop@oakmade.com">product suggestions</a>.</p>
+      <p class="social"><a href="https://twitter.com/{{site.meta.twitter}}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @{{site.meta.twitter}}</a></p>
+    </footer>
   </div>
 
   <script src="/scripts/js/min/application.js"></script>
@@ -72,13 +74,15 @@
     
     var Swiftype = window.Swiftype || {};
     (function() {
-      Swiftype.key = 'XvEwxWqhzZY5rd8BwpKs';
+      Swiftype.key = '{{site.meta.swiftype}}';
 
       var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
       script.src = "//swiftype.com/embed.js";
       var entry = document.getElementsByTagName('script')[0];
       document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
     }());
+    
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
   </script>
   {% if site.meta.body_bottom %}{{ site.meta.body_bottom }}{% endif %}
 </body>

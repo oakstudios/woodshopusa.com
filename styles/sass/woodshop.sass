@@ -73,6 +73,10 @@ header
     +max-width($bp_fs_adjust)
       display: none
 
+body .st-modal
+  width: 704px
+  margin-left: -352px
+
 .nav-menu
   float: right
   
@@ -185,7 +189,7 @@ header
 .tag-listing-count
   @extend .post-listing-date
   
-.ss-cart
-  &:before, &:after
-    vertical-align: middle
-    margin: 0 8px
+footer
+  @extend .siteleaf-credit
+  .social
+    margin-top: 2em

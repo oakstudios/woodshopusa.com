@@ -5,10 +5,10 @@
     </div>
   {% endif %}
 
-  <h1 class="title padded">{{ title }} <span class="by">by <a href="{{taxonomy.by.first.url}}">{{taxonomy.by.first.value}}</a></span></h1>
+  <h1 class="title padded">{{ title }}{% if type == 'post' %} <span class="by">by <a href="{{taxonomy.by.first.url}}">{{taxonomy.by.first.value}}</a></span>{% endif %}</h1>
 
   {% if pages.size > 0 %}
-    <div class="subpages padded">
+    <div class="subpages padded" data-swiftype-index="false">
       {% for page in pages %}
         <a href="{{page.url}}">{{page.title}}</a>
       {% endfor %}
@@ -18,7 +18,8 @@
   <div class="body padded">
     {{ body }}
 
-    <div class="tagset">
+    {% if type == 'post' %}
+    <div class="tagset" data-swiftype-index="false">
       <strong>Category:</strong>
       {% for tag in taxonomy.category.tags %}
         <a href="{{tag.url}}" class="tag">{{tag.value | replace:' - ',', '}}</a>
@@ -26,7 +27,7 @@
     </div>
     {% for tagset in taxonomy %}
     {% unless tagset.key == 'Category' %}
-    <div class="tagset">
+    <div class="tagset" data-swiftype-index="false">
       <strong>{{tagset.key | replace:'by','Made by' | replace:'in','Location' | replace:'with','Materials' | capitalize}}:</strong>
       {% for tag in tagset %}
         <a href="{{tag.url}}" class="tag">{{tag.value | replace:' - ',', '}}</a>
@@ -36,12 +37,13 @@
     {% endunless %}
     {% endfor %}
     
-    <p class="actions"><a href="{{meta.store_link}}{% if meta.store_link contains 'amazon.com' %}?tag=woodshopusa-20{% endif %}" class="button" target="_blank">Buy at {{meta.store_link | remove_first:'http://' | remove_first:'htts://' | remove_first:'www.' | split:'/' | first}} - ${{meta.price}}</a></p>
+    <p class="actions" data-swiftype-index="false"><a href="{{meta.store_link}}{% if meta.store_link contains 'amazon.com' %}?tag=woodshopusa-20{% endif %}" class="button" target="_blank">Buy at {{meta.store_link | remove_first:'http://' | remove_first:'htts://' | remove_first:'www.' | split:'/' | first}} - ${{meta.price}}</a></p>
+    {% endif %}
     
   </div>
 
   {% if type == 'post' and (next or previous) %}
-    <div class="post-nav">
+    <div class="post-nav" data-swiftype-index="false">
       {% if previous %}
         <a href="{{ previous.url }}" class="post-nav-link previous">&larr; {{ previous.title }}</a>
       {% endif %}
