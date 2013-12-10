@@ -18,16 +18,26 @@
   <div class="body padded">
     {{ body }}
 
+    <div class="tagset">
+      <strong>Category:</strong>
+      {% for tag in taxonomy.category.tags %}
+        <a href="{{tag.url}}" class="tag">{{tag.value | replace:' - ',', '}}</a>
+      {% endfor %}
+    </div>
     {% for tagset in taxonomy %}
-      <div class="tagset">
-        <strong>{{tagset.key | capitalize}}:</strong>
-        {% for tag in tagset %}
-          <a href="{{tag.url}}" class="tag">{{tag.value | replace:' - ',', '}}</a>
-        {% endfor %}
-      </div>
+    {% unless tagset.key == 'Category' %}
+    <div class="tagset">
+      <strong>{{tagset.key | replace:'by','Made by' | replace:'in','Location' | replace:'with','Materials' | capitalize}}:</strong>
+      {% for tag in tagset %}
+        <a href="{{tag.url}}" class="tag">{{tag.value | replace:' - ',', '}}</a>
+      {% endfor %}
+      {% if tagset.key == 'by' %}<span>(<a href="{{meta.company_link}}" class="tag" target="_blank">{{meta.company_link | remove_first:'http://' | remove_first:'htts://' | remove_first:'www.' | split:'/' | first}}</a>)</span>{% endif %}
+    </div>
+    {% endunless %}
     {% endfor %}
     
-    <a href="{{meta.store_link}}" class="view-all-button button ss-cart" target="_blank">Buy at {{meta.store_link | remove_first:'http://' | remove_first:'htts://' | remove_first:'www.' | split:'/' | first}} - ${{meta.price}}</a>
+    <p class="actions"><a href="{{meta.store_link}}{% if meta.store_link contains 'amazon.com' %}?tag=woodshopusa-20{% endif %}" class="button" target="_blank">Buy at {{meta.store_link | remove_first:'http://' | remove_first:'htts://' | remove_first:'www.' | split:'/' | first}} - ${{meta.price}}</a></p>
+    
   </div>
 
   {% if type == 'post' and (next or previous) %}

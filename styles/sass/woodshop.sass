@@ -1,8 +1,36 @@
 @import 'toolbox'
 @import 'global'
 
+$body_font: 'Ideal Sans SSm A', 'Ideal Sans SSm B'
+$header_font: 'Tungsten A', 'Tungsten B'
+
+body
+  font-family: $body_font
+  font-weight: 300
+  font-size: 1em
+
+header
+  font-family: $header_font
+  &, h1, h2
+    font-weight: 400
+
+.post-title
+  font-size: 1em
+  position: relative
+  margin: 10px 0 0 0
+  padding-right: 90px
+
+.post-title, .button, .content .title
+  font-family: $body_font
+  font-weight: 600
+
+.content .body
+  .view-all-button
+    overflow: show
+
 .wrap
   margin-top: 60px
+  margin-bottom: 60px
 
 .primary-header
   +clearfix
@@ -11,6 +39,8 @@
   
   h1.site-title 
     margin-bottom: 60px
+    +max-width($bp_fs_adjust)
+      margin-bottom: 6px
     a
       background: url(/assets/woodshop-logo.svg)
       display: inline-block
@@ -23,9 +53,15 @@
     color: rgba($tc_light, 0.5)
     position: absolute
     text-transform: uppercase
-    top: 72px
+    top: 68px
     left: 30px
-    font-size: 1.4em
+    font-size: 1.6em
+    +max-width($bp_fs_adjust)
+      position: static
+      left: auto
+      right: auto
+      top: auto
+      margin: 0
   
   form.search
     position: absolute
@@ -34,6 +70,8 @@
     input.st-search-input
       height: 30px
       +prefix-property(box-shadow, none)
+    +max-width($bp_fs_adjust)
+      display: none
 
 .nav-menu
   float: right
@@ -43,37 +81,60 @@
   float: left
   
 .nav-menu, .category-menu
-  padding: 20px
-  font-size: 1em
+  margin: 20px
+  font-size: 1.4em
+  +max-width($bp_fs_adjust)
+    margin: 15px
+    float: none
+    text-align: center
   a 
     color: $tc_main
-    font-weight: bold
     text-transform: uppercase
     text-decoration: none
     padding: 4px 0
     &.is-current-page
       color: white
-      margin: 0
-      padding: 4px 10px
+      padding: 0 8px
       background: $bg_dark
+      margin: 0
+      &:first-of-type
+        margin-left: 10px
+      &:last-of-type
+        margin-right: 10px
 
 .post-preview, .content
   border: none
+
++min-width($w_max_wrap)
+  body
+    &.archive //, &.tag
+      .post-preview
+        width: 25%
   
 .post-image-link
   display: block
   text-align: center
   
-.post-title, .buy
-  margin: 10px 0 0 0
-  
 .buy
-  display: block
-  float: right
-  text-decoration: none
+  position: absolute
+  top: 0
+  right: 0
+  color: $tc_light
   
 .by, .by a
   color: $tc_light
+  font-weight: 300
+
+.actions 
+  text-align: center
+  .button
+    @extend .view-all-button
+    max-width: none
+    display: inline-block
+    width: auto
+    padding-left: 2em
+    padding-right: 2em
+    margin: 40px auto
 
 .post-body
   a
@@ -82,20 +143,40 @@
     &:hover
       color: $tc_main
       text-decoration: none
-      
+
+.tagset
+  font-size: 0.8em
+
 #map-canvas
   height: 400px
   margin: 30px
-  padding: 0px
+  padding: 0
   img
     max-width: none
-    
-.post-nav-link
+  .content .body &
+    height: 120px
+    margin: 1em 0
+
+.gm-style 
+  h1:first-of-type
+    margin-top: 4px
+  ul
+    padding-left: 2em
+  p:last-of-type
+    margin-bottom: 2px
+  a.view-all
+    text-decoration: none
+
+.post-nav
   background: none
-  &.previous
-    text-align: left
-  &.next
-    text-align: right
+  .post-nav-link
+    color: $tc_light
+    background: none
+    width: auto
+    &.previous
+      text-align: left
+    &.next
+      text-align: right
     
 .tag-listing-item
   @extend .post-listing-item
@@ -103,3 +184,8 @@
   @extend .post-listing-title
 .tag-listing-count
   @extend .post-listing-date
+  
+.ss-cart
+  &:before, &:after
+    vertical-align: middle
+    margin: 0 8px

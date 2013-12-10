@@ -1,11 +1,9 @@
 function initialize() {
   var map = new google.maps.Map(document.getElementById('map-canvas'), {
-    zoom: 4,
+    zoom: 6,
     scrollwheel: false,
     disableDefaultUI: true,
-    zoomControl: true,
-    panControl: true,
-    center: new google.maps.LatLng(37.160317,-95.800781)
+    zoomControl: true
   });
   
   styles = [
@@ -52,30 +50,19 @@ function initialize() {
   styledMap = new google.maps.StyledMapType(styles, {name: "Styled Map"});
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
-  
-  var infowindows = [];
+
   var geocoder = new google.maps.Geocoder();
-  {% for location in site.pages.products.taxonomy.in %}
-  geocoder.geocode({'address': '{{location.value}}'}, function(results, status) {
+  
+  geocoder.geocode({'address': made_in}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
           map: map,
           position: results[0].geometry.location,
-          title: '{{location.value}}'
+          title: made_in
       });
-      var infowindow{{location.slug | replace:'-',''}} = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">{{location.value | replace:" - ",", "}}</h1><ul>{% for post in location.posts limit:5 %}<li><a href="{{post.url}}">{{post.title}}</a></li>{% endfor %}</ul><p><a href="{{location.url}}" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindow{{location.slug | replace:'-',''}}.open(map,marker);
-      });
-      infowindows.push(infowindow{{location.slug | replace:'-',''}});
+      map.setCenter(results[0].geometry.location);
     }
   });
-  {% endfor %}
   
 }
 google.maps.event.addDomListener(window, 'load', initialize);

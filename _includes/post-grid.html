@@ -1,5 +1,6 @@
 <section class="post-listing">
-  {% for post in posts %}
+  {% if home? %}{% assign featured_size = site.meta.featured_size %}{% endif %}
+  {% for post in posts limit:featured_size %}
 
     <article class="post-preview">
       {% if post.assets.size > 0 %}
@@ -7,8 +8,10 @@
           <img src="{{ post.assets.first.url }}" alt="{{ post.title }}" />
         </a>
       {% endif %}
-      <a href="{{post.meta.store_link}}" class="buy ss-cart" target="_blank">${{post.meta.price}}</a>
-      <h1 class="post-title"><a href="{{post.url}}">{{post.title}}</a></h1>
+      <h1 class="post-title">
+        <a href="{{post.url}}">{{post.title}}</a>
+        <a href="{{post.meta.store_link}}{% if meta.store_link contains 'amazon.com' %}?tag=woodshopusa-20{% endif %}" class="buy" target="_blank">${{post.meta.price}}</a>
+      </h1>
       <p class="post-body">
         By <a href="{{post.taxonomy.by.first.url}}">{{post.taxonomy.by.first.value}}</a> in <a href="{{post.taxonomy.in.first.url}}">{{post.taxonomy.in.first.value | replace:' - ',', '}}</a>
       </p>

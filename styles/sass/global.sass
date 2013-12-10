@@ -106,7 +106,7 @@ a
   border: 1px solid $border_color
   float: left
 
-  +max-width(700px)
+  +max-width($bp_fs_adjust)
     width: 50%
 
   +max-width(500px)
@@ -219,7 +219,7 @@ a
   &:after
     content: ', '
 
-  &:last-child:after
+  &:last-of-type:after
     content: ''
 
   &:hover
