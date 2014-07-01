@@ -10,8 +10,9 @@
   <title>{{site.title}} | {{title | replace:site.pages.first.title, site.meta.subtitle}}</title>
   <link rel="alternate" type="application/rss+xml" href="{{site.feed_url}}" />
   <link rel="stylesheet" type="text/css" href="/styles/css/woodshop.css?20131210" />
-  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/628774/718122/css/fonts.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.symbolset.com/4c5f109e6780e4ee4ab1c4104b8bc42a099215ff/symbolset.css" />
+  <script type="text/javascript" src="//use.typekit.net/yop6vqz.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   {% if slug == 'map' %}<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
   <script src="/scripts/js/map.js"></script>{% endif %}
   {% if site.meta.head %}{{ site.meta.head }}{% endif %}
@@ -57,7 +58,7 @@
       {% include "includes/tag-listing" %}
     {% endif %}
     <footer class="credit" data-swiftype-index="false">
-      <p>Made in Brooklyn, NY by <a href="http://oak.is" target="_blank">Oak</a>. Powered by <a href="http://www.siteleaf.com" target="_blank">Siteleaf</a>. Send us your <a href="mailto:woodshop@oakmade.com">product suggestions</a>.</p>
+      <p>Crafted in Brooklyn by <a href="http://oak.is" target="_blank">Oak</a>. Powered by <a href="http://www.siteleaf.com" target="_blank">Siteleaf</a>.</p>
       <p class="social"><a href="https://twitter.com/{{site.meta.twitter}}" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @{{site.meta.twitter}}</a></p>
     </footer>
   </div>
