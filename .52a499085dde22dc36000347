@@ -1,15 +1,18 @@
 ---
-time: 1512422361
+time: 1512422595
 inventory:
   "/products/index.html":
-    md5: 7f7a5988ccfb6dc8d7a5e993823da6c9
-    time: 1512422348
+    md5: 12727c21c3b1c8b29d4f757a273d29b1
+    time: 1512422582
   "/index.html":
-    md5: 7f7a5988ccfb6dc8d7a5e993823da6c9
-    time: 1512422348
+    md5: 12727c21c3b1c8b29d4f757a273d29b1
+    time: 1512422582
+  "/products/whisk/index.html":
+    md5: e7cb5d3ac20686f4a77ee7ba40ff50e4
+    time: 1512422582
   "/products/nesting-houses/index.html":
-    md5: 3d8c5612e9c4772c48ee74abc87fb708
-    time: 1512422349
+    md5: 4d53509604b56b58023a9a87da1db856
+    time: 1512422582
   "/products/mug/index.html":
     md5: fb1789837cd238bbb9d57a78cf3cc093
     time: 1512422349
@@ -155,11 +158,14 @@ inventory:
     md5: 6355c4c4c4a7d81d27c0ce37877378bf
     time: 1481844726
   "/products/archive/index.html":
-    md5: f89dc9932f53bf2322ec287bc21d857f
-    time: 1512422350
+    md5: b4b1d915a7ced88502f6c963b0077ed0
+    time: 1512422584
   "/products/by/index.html":
-    md5: b921cb6d6ee78ba56f48f25131d7bebc
-    time: 1512422351
+    md5: 0bf8f50865e732c6428d617a0ab059a4
+    time: 1512422584
+  "/products/by/williams-sonoma/index.html":
+    md5: db5f03b9ea6f2ef992035fe34f106b29
+    time: 1512422584
   "/products/by/hearth-and-hand/index.html":
     md5: 0cd3892827611e6cdaa68fd2f0863bcc
     time: 1512422351
@@ -242,14 +248,14 @@ inventory:
     md5: 0c822a5a26907839ea01f10dc0c0c328
     time: 1481844727
   "/products/category/index.html":
-    md5: d09e87b77f24a28a4219ccc3005d6bc5
-    time: 1512422351
+    md5: c515b40bb0029f5ffa9ee1ea6449e8f0
+    time: 1512422585
+  "/products/category/kitchen/index.html":
+    md5: fbaf8a60fdb656aeb1891d2a7070b754
+    time: 1512422585
   "/products/category/art/index.html":
     md5: 52c4d32149a79fc80d615675c4c7493d
     time: 1512422351
-  "/products/category/kitchen/index.html":
-    md5: 2fcc0637e1433e0997fba03d4dca2e68
-    time: 1512422131
   "/products/category/kids/index.html":
     md5: 0bcefb31aedc492b1494d90a99007df4
     time: 1512420837
@@ -266,8 +272,11 @@ inventory:
     md5: e12368131841c56be26a892bb439d44d
     time: 1481844728
   "/products/in/index.html":
-    md5: 401f441a1b1af6438c43cd413ce2ddce
-    time: 1512422352
+    md5: e0497636d4e3c46de9746e2338424aa9
+    time: 1512422586
+  "/products/in/sonoma-ca/index.html":
+    md5: 1e41fdaa2d3668d935fd7e32a4a0feb1
+    time: 1512422586
   "/products/in/waco-tx/index.html":
     md5: b6c93a3264ba9f28f7c04580de17231d
     time: 1512422352
@@ -329,8 +338,11 @@ inventory:
     md5: 70bb3331c629456716b0fc325849e18e
     time: 1481844728
   "/products/with/index.html":
-    md5: 69880afd2cfd930d6add4476c57a41d6
-    time: 1512422353
+    md5: 40b80b6c27720308b7410f1764cb1ae7
+    time: 1512422587
+  "/products/with/walnut/index.html":
+    md5: e46feca411c708c949c81490d8e26719
+    time: 1512422587
   "/products/with/mango/index.html":
     md5: b56c105f6a0b2ded628abdf0906c3c77
     time: 1512422353
@@ -349,9 +361,6 @@ inventory:
   "/products/with/oak/index.html":
     md5: 08a8f8cdfb7cbe9c249e57426610afa7
     time: 1481844728
-  "/products/with/walnut/index.html":
-    md5: 7419c8eaf9975eb41a57d98406ffdc1c
-    time: 1481844729
   "/products/with/cedar/index.html":
     md5: f0134bb53e4f85371c98a76cbb3f1f35
     time: 1481844729
@@ -386,8 +395,8 @@ inventory:
     md5: e4a7be051a446f881880506838dece45
     time: 1481844729
   "/map/index.html":
-    md5: 1f0d74da139c70111dea83fc112f1b47
-    time: 1512422353
+    md5: cdc343d5ee6d531fb56e5386dea18cc3
+    time: 1512422587
   "/about/index.html":
     md5: c14e2fc97f24f92731af44d24ebd81c7
     time: 1481844729
@@ -395,11 +404,11 @@ inventory:
     md5: f32c1c9a49415e0604b441e606996f52
     time: 1481844729
   "/sitemap.xml":
-    md5: 63f13792c397ff8fb41b846b9aad1851
-    time: 1512422354
+    md5: c4626b72e7d9cf01d7977886f5f6f02b
+    time: 1512422587
   "/feed.xml":
-    md5: 5fa29fdb00cb5ed66903ebcebcd62024
-    time: 1512422354
+    md5: 0779174b2d86e109a67a5770628b620b
+    time: 1512422588
   "/assets/bestmade-american-felling-axe.jpg":
     md5: 23b32817882ca60378ac41b1b47c9aef
     time: 1481844729
@@ -512,8 +521,8 @@ inventory:
     md5: e282464a6997d62ac74daf226bafd4c1
     time: 1481844737
   "/scripts/js/map.js":
-    md5: 01e756b7ba6a045087bd64db92c2174c
-    time: 1512422354
+    md5: f3a6b1b096db1de7be031af346b7931f
+    time: 1512422588
   "/assets/field-archery.jpg":
     md5: c4cce78c70ff03f4eba5079275e5c11f
     time: 1481844737
@@ -604,6 +613,9 @@ inventory:
   "/assets/52591970.jpeg":
     md5: bc902859389196029dbf45715442b903
     time: 1512422354
+  "/assets/img2c.jpg":
+    md5: 90da83983a730b68dfa5dac45684576b
+    time: 1512422588
   "/assets/uncle-googe-alphabet-blocks2.jpg":
     md5: 0328dd7e2427e4916e45293bb4398cb0
     time: 1481844740
