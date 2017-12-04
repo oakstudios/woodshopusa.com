@@ -56,6 +56,26 @@ function initialize() {
   var infowindows = [];
   var geocoder = new google.maps.Geocoder();
   
+  geocoder.geocode({'address': 'Atlanta - GA'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Atlanta - GA'
+      });
+      var infowindowatlantaga = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Atlanta, GA</h1><ul><li><a href="/products/deer-teether">Deer Teether</a></li></ul><p><a href="/products/in/atlanta-ga" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowatlantaga.open(map,marker);
+      });
+      infowindows.push(infowindowatlantaga);
+    }
+  });
+  
   geocoder.geocode({'address': 'Beebe - AK'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
