@@ -56,26 +56,6 @@ function initialize() {
   var infowindows = [];
   var geocoder = new google.maps.Geocoder();
   
-  geocoder.geocode({'address': 'Eau Claire - WI'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Eau Claire - WI'
-      });
-      var infowindoweauclairewi = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Eau Claire, WI</h1><ul><li><a href="/products/wooden-walking-goose">Wooden Walking Goose</a></li></ul><p><a href="/products/in/eau-claire-wi" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindoweauclairewi.open(map,marker);
-      });
-      infowindows.push(infowindoweauclairewi);
-    }
-  });
-  
   geocoder.geocode({'address': 'Chaska - MN'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
@@ -84,7 +64,7 @@ function initialize() {
           title: 'Chaska - MN'
       });
       var infowindowchaskamn = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Chaska, MN</h1><ul><li><a href="/products/wood-banner">Wood Banner</a></li></ul><p><a href="/products/in/chaska-mn" class="view-all">View all</a></p>'
+        content: '<h1 class="post-title">Chaska, MN</h1><ul><li><a href="/products/tree-pennant">Tree Pennant</a></li><li><a href="/products/wood-banner">Wood Banner</a></li></ul><p><a href="/products/in/chaska-mn" class="view-all">View all</a></p>'
       });
       google.maps.event.addListener(marker, 'click', function() {
         for (var i=0;i<infowindows.length;i++) {
@@ -104,7 +84,7 @@ function initialize() {
           title: 'Waco - TX'
       });
       var infowindowwacotx = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Waco, TX</h1><ul><li><a href="/products/leather-handle-wooden-tray">Leather Handle Wooden Tray</a></li><li><a href="/products/nesting-houses">Nesting Houses</a></li><li><a href="/products/mug">Mug</a></li></ul><p><a href="/products/in/waco-tx" class="view-all">View all</a></p>'
+        content: '<h1 class="post-title">Waco, TX</h1><ul><li><a href="/products/slab-pedastal">Slab Pedastal</a></li><li><a href="/products/leather-handle-wooden-tray">Leather Handle Wooden Tray</a></li><li><a href="/products/nesting-houses">Nesting Houses</a></li><li><a href="/products/mug">Mug</a></li></ul><p><a href="/products/in/waco-tx" class="view-all">View all</a></p>'
       });
       google.maps.event.addListener(marker, 'click', function() {
         for (var i=0;i<infowindows.length;i++) {
@@ -113,6 +93,66 @@ function initialize() {
         infowindowwacotx.open(map,marker);
       });
       infowindows.push(infowindowwacotx);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Mesa - AZ'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Mesa - AZ'
+      });
+      var infowindowmesaaz = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Mesa, AZ</h1><ul><li><a href="/products/succulent-planter">Succulent Planter</a></li></ul><p><a href="/products/in/mesa-az" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowmesaaz.open(map,marker);
+      });
+      infowindows.push(infowindowmesaaz);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Mapleton - UT'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Mapleton - UT'
+      });
+      var infowindowmapletonut = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Mapleton, UT</h1><ul><li><a href="/products/candle-holders">Candle Holders</a></li></ul><p><a href="/products/in/mapleton-ut" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowmapletonut.open(map,marker);
+      });
+      infowindows.push(infowindowmapletonut);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Eau Claire - WI'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Eau Claire - WI'
+      });
+      var infowindoweauclairewi = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Eau Claire, WI</h1><ul><li><a href="/products/wooden-walking-goose">Wooden Walking Goose</a></li></ul><p><a href="/products/in/eau-claire-wi" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindoweauclairewi.open(map,marker);
+      });
+      infowindows.push(infowindoweauclairewi);
     }
   });
   
