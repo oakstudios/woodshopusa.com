@@ -56,6 +56,26 @@ function initialize() {
   var infowindows = [];
   var geocoder = new google.maps.Geocoder();
   
+  geocoder.geocode({'address': 'Yacolt - WA'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Yacolt - WA'
+      });
+      var infowindowyacoltwa = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Yacolt, WA</h1><ul><li><a href="/products/ladder">Ladder</a></li></ul><p><a href="/products/in/yacolt-wa" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowyacoltwa.open(map,marker);
+      });
+      infowindows.push(infowindowyacoltwa);
+    }
+  });
+  
   geocoder.geocode({'address': 'Sonoma - CA'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
