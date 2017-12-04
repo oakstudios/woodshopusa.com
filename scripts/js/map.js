@@ -56,6 +56,26 @@ function initialize() {
   var infowindows = [];
   var geocoder = new google.maps.Geocoder();
   
+  geocoder.geocode({'address': 'Colorado City - CO'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Colorado City - CO'
+      });
+      var infowindowcoloradocityco = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Colorado City, CO</h1><ul><li><a href="/products/giantknittingneedles">Giant Knitting Needles</a></li></ul><p><a href="/products/in/colorado-city-co" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowcoloradocityco.open(map,marker);
+      });
+      infowindows.push(infowindowcoloradocityco);
+    }
+  });
+  
   geocoder.geocode({'address': 'Chicopee - MA'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({

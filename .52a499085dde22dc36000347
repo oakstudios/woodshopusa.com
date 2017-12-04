@@ -1,15 +1,18 @@
 ---
-time: 1481844811
+time: 1512411519
 inventory:
   "/products/index.html":
-    md5: 684be1119da106d404f3a66659236038
-    time: 1481844725
+    md5: a73e2b3f39d8f41fa1e061cf17ca5c8c
+    time: 1512411507
   "/index.html":
-    md5: 684be1119da106d404f3a66659236038
-    time: 1481844725
+    md5: a73e2b3f39d8f41fa1e061cf17ca5c8c
+    time: 1512411507
+  "/products/giantknittingneedles/index.html":
+    md5: c6acaa57bdd9b494cd154c1e593c7e8b
+    time: 1512411507
   "/products/classic-coffeemaker/index.html":
-    md5: dbca8adb5d930c2874993ccd73d251e3
-    time: 1481844725
+    md5: 376f1e7210d054ea702c57c5bfc5ab16
+    time: 1512411507
   "/products/cherry-graph/index.html":
     md5: c89f0af29dba38eb4ba2fda5d9fb9fe9
     time: 1481844725
@@ -143,11 +146,14 @@ inventory:
     md5: 6355c4c4c4a7d81d27c0ce37877378bf
     time: 1481844726
   "/products/archive/index.html":
-    md5: 4c8057ebf4ea713bdbbe8e579f76192f
-    time: 1481844726
+    md5: ea5f5f796b1256852024df38aea5165a
+    time: 1512411509
   "/products/by/index.html":
-    md5: 08df7845756d9b1075031c1cda3b6c70
-    time: 1481844726
+    md5: 99be25f1f74d84ede616461d18d6d000
+    time: 1512411509
+  "/products/by/intreccio/index.html":
+    md5: f9fe12e06066e3fbfbbb4df92c7138ba
+    time: 1512411509
   "/products/by/chemex/index.html":
     md5: ac513c882c48b065d9247fced189f24e
     time: 1481844726
@@ -218,13 +224,13 @@ inventory:
     md5: 0c822a5a26907839ea01f10dc0c0c328
     time: 1481844727
   "/products/category/index.html":
-    md5: 04e6536b93f35784e67eaaf850b39553
-    time: 1481844727
+    md5: 2a7bb24573d424e704b5c0c019fabfbd
+    time: 1512411509
+  "/products/category/art/index.html":
+    md5: 63a011d507f0b93cd43655614031d747
+    time: 1512411510
   "/products/category/kitchen/index.html":
     md5: 364d06891c0a80f8b22e991d7b9a128f
-    time: 1481844727
-  "/products/category/art/index.html":
-    md5: dad3f7884a354b94db70e09a7e5cf56d
     time: 1481844727
   "/products/category/outdoors/index.html":
     md5: a68f3058d910bf8b3a922d68e4409670
@@ -242,8 +248,11 @@ inventory:
     md5: e12368131841c56be26a892bb439d44d
     time: 1481844728
   "/products/in/index.html":
-    md5: 2e9972f1d304709c65daa101f1b2edd1
-    time: 1481844728
+    md5: 177a04f88721fd979b0f9c4fcc6c93b9
+    time: 1512411510
+  "/products/in/colorado-city-co/index.html":
+    md5: 370a656a47e73bd115d2e7b3f84ee5db
+    time: 1512411510
   "/products/in/chicopee-ma/index.html":
     md5: e819e870df2bf3c0567f3191d4d25243
     time: 1481844728
@@ -296,16 +305,16 @@ inventory:
     md5: 70bb3331c629456716b0fc325849e18e
     time: 1481844728
   "/products/with/index.html":
-    md5: c8c0f7299270f9586060320351a6887e
-    time: 1481844728
+    md5: f0da64d2b7b4e68fd81433ead7cb7fdd
+    time: 1512411511
+  "/products/with/maple/index.html":
+    md5: 9073abf5a82851522e89039e325db15d
+    time: 1512411511
   "/products/with/rubberwood/index.html":
     md5: a6558f0b2e63f2a75f109faf1123adeb
     time: 1481844728
   "/products/with/cherry/index.html":
     md5: ecef590eed41520d10fc32dbb305919f
-    time: 1481844728
-  "/products/with/maple/index.html":
-    md5: 8e99699b7cc721548f1baf904b259062
     time: 1481844728
   "/products/with/oak/index.html":
     md5: 08a8f8cdfb7cbe9c249e57426610afa7
@@ -350,8 +359,8 @@ inventory:
     md5: e4a7be051a446f881880506838dece45
     time: 1481844729
   "/map/index.html":
-    md5: 46c58993c70e5e055b0b6f6cb5ba9f92
-    time: 1481844729
+    md5: 438bdd2f324a486151018e5a9e7f3c94
+    time: 1512411511
   "/about/index.html":
     md5: c14e2fc97f24f92731af44d24ebd81c7
     time: 1481844729
@@ -359,11 +368,11 @@ inventory:
     md5: f32c1c9a49415e0604b441e606996f52
     time: 1481844729
   "/sitemap.xml":
-    md5: f7bae75155f26e122235a3ab5a4cb926
-    time: 1481844729
+    md5: 848cfe26577d96819e8d1ff52fc72c82
+    time: 1512411511
   "/feed.xml":
-    md5: e43eb1661d27012a0740a105ebdf1946
-    time: 1481844729
+    md5: cae19db93e5b21bd6a951c31fd01f39e
+    time: 1512411511
   "/assets/bestmade-american-felling-axe.jpg":
     md5: 23b32817882ca60378ac41b1b47c9aef
     time: 1481844729
@@ -476,8 +485,8 @@ inventory:
     md5: e282464a6997d62ac74daf226bafd4c1
     time: 1481844737
   "/scripts/js/map.js":
-    md5: 38a8d4ae1f3b5f633f42523818c8558b
-    time: 1481844737
+    md5: 9cd1c8cdf75cd3e9c2046d55587d6e34
+    time: 1512411512
   "/assets/field-archery.jpg":
     md5: c4cce78c70ff03f4eba5079275e5c11f
     time: 1481844737
@@ -550,6 +559,9 @@ inventory:
   "/assets/grovemade-brass-knife.jpg":
     md5: bc73c90dbdd3af0954258caf233a3dd5
     time: 1481844740
+  "/assets/Needles.jpg":
+    md5: 7eabdca1307d22a2f2f75b7669417424
+    time: 1512411512
   "/assets/uncle-googe-alphabet-blocks2.jpg":
     md5: 0328dd7e2427e4916e45293bb4398cb0
     time: 1481844740
