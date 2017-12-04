@@ -1,15 +1,18 @@
 ---
-time: 1512418918
+time: 1512420598
 inventory:
   "/products/index.html":
-    md5: 684be1119da106d404f3a66659236038
-    time: 1512418907
+    md5: 37ba115297a45c33cae491642c6eb5cb
+    time: 1512420585
   "/index.html":
-    md5: 684be1119da106d404f3a66659236038
-    time: 1512418907
+    md5: 37ba115297a45c33cae491642c6eb5cb
+    time: 1512420585
+  "/products/bookends/index.html":
+    md5: 11e7d3479758f8e805d5a2a8d73be8b0
+    time: 1512420586
   "/products/classic-coffeemaker/index.html":
-    md5: dbca8adb5d930c2874993ccd73d251e3
-    time: 1512418908
+    md5: 6d7acc67b3e3120667045614c9d44908
+    time: 1512420586
   "/products/cherry-graph/index.html":
     md5: c89f0af29dba38eb4ba2fda5d9fb9fe9
     time: 1481844725
@@ -143,11 +146,14 @@ inventory:
     md5: 6355c4c4c4a7d81d27c0ce37877378bf
     time: 1481844726
   "/products/archive/index.html":
-    md5: 2e4274f25dcfde835a23bcf620802597
-    time: 1512418909
+    md5: 1eef0dcb660c46d982b842724ff24f4f
+    time: 1512420587
   "/products/by/index.html":
-    md5: 08df7845756d9b1075031c1cda3b6c70
-    time: 1512418909
+    md5: b55808bb29d1212a6f6066d3fdf8fe7d
+    time: 1512420587
+  "/products/by/spilled-milk-designs/index.html":
+    md5: 3cbca6cecadaf5b94ffce71ce354d824
+    time: 1512420587
   "/products/by/chemex/index.html":
     md5: ac513c882c48b065d9247fced189f24e
     time: 1481844726
@@ -218,14 +224,14 @@ inventory:
     md5: 0c822a5a26907839ea01f10dc0c0c328
     time: 1481844727
   "/products/category/index.html":
-    md5: 04e6536b93f35784e67eaaf850b39553
-    time: 1512418910
+    md5: 2a7bb24573d424e704b5c0c019fabfbd
+    time: 1512420588
+  "/products/category/art/index.html":
+    md5: 75b4f71cb98260bbc56ff612710c37ce
+    time: 1512420588
   "/products/category/kitchen/index.html":
     md5: 364d06891c0a80f8b22e991d7b9a128f
     time: 1481844727
-  "/products/category/art/index.html":
-    md5: dad3f7884a354b94db70e09a7e5cf56d
-    time: 1512418910
   "/products/category/outdoors/index.html":
     md5: a68f3058d910bf8b3a922d68e4409670
     time: 1481844727
@@ -242,8 +248,11 @@ inventory:
     md5: e12368131841c56be26a892bb439d44d
     time: 1481844728
   "/products/in/index.html":
-    md5: 2e9972f1d304709c65daa101f1b2edd1
-    time: 1512418910
+    md5: 632fbe22ce0c0c1181e847b4ccb94ffe
+    time: 1512420589
+  "/products/in/beebe-ak/index.html":
+    md5: 5782863f77de0d0079c5fd5bdc9387b6
+    time: 1512420589
   "/products/in/chicopee-ma/index.html":
     md5: e819e870df2bf3c0567f3191d4d25243
     time: 1481844728
@@ -296,8 +305,11 @@ inventory:
     md5: 70bb3331c629456716b0fc325849e18e
     time: 1481844728
   "/products/with/index.html":
-    md5: c8c0f7299270f9586060320351a6887e
-    time: 1512418911
+    md5: 29acf8e75772061099e4fe2ce3353557
+    time: 1512420589
+  "/products/with/beech/index.html":
+    md5: 92f4426e09b4076ec45f63f636f46e36
+    time: 1512420589
   "/products/with/rubberwood/index.html":
     md5: a6558f0b2e63f2a75f109faf1123adeb
     time: 1481844728
@@ -309,9 +321,6 @@ inventory:
     time: 1512418911
   "/products/with/oak/index.html":
     md5: 08a8f8cdfb7cbe9c249e57426610afa7
-    time: 1481844728
-  "/products/with/beech/index.html":
-    md5: 4361a7d0080a79c9e8d17fe564f09736
     time: 1481844728
   "/products/with/walnut/index.html":
     md5: 7419c8eaf9975eb41a57d98406ffdc1c
@@ -350,8 +359,8 @@ inventory:
     md5: e4a7be051a446f881880506838dece45
     time: 1481844729
   "/map/index.html":
-    md5: 46c58993c70e5e055b0b6f6cb5ba9f92
-    time: 1512418912
+    md5: 4aa2d72b72233747b79b7433b0e21d2e
+    time: 1512420590
   "/about/index.html":
     md5: c14e2fc97f24f92731af44d24ebd81c7
     time: 1481844729
@@ -359,11 +368,11 @@ inventory:
     md5: f32c1c9a49415e0604b441e606996f52
     time: 1481844729
   "/sitemap.xml":
-    md5: f7bae75155f26e122235a3ab5a4cb926
-    time: 1512418912
+    md5: c41ba90f2147754efc05fed94cce5be5
+    time: 1512420590
   "/feed.xml":
-    md5: c81b25ea8341187d47cba03ddb477872
-    time: 1512418912
+    md5: 144f04d3ea100eed314794f2dd06c6d0
+    time: 1512420590
   "/assets/bestmade-american-felling-axe.jpg":
     md5: 23b32817882ca60378ac41b1b47c9aef
     time: 1481844729
@@ -476,8 +485,8 @@ inventory:
     md5: e282464a6997d62ac74daf226bafd4c1
     time: 1481844737
   "/scripts/js/map.js":
-    md5: 38a8d4ae1f3b5f633f42523818c8558b
-    time: 1512418912
+    md5: 108a8c6ae4623cca067e57184815b55c
+    time: 1512420590
   "/assets/field-archery.jpg":
     md5: c4cce78c70ff03f4eba5079275e5c11f
     time: 1481844737
@@ -553,6 +562,9 @@ inventory:
   "/assets/Needles.jpg":
     md5: 7eabdca1307d22a2f2f75b7669417424
     time: 1512411512
+  "/assets/il_570xN.1086807387_mmek.jpg":
+    md5: a6a6392830b5c7c0e78fd4a4bbe8690a
+    time: 1512420590
   "/assets/uncle-googe-alphabet-blocks2.jpg":
     md5: 0328dd7e2427e4916e45293bb4398cb0
     time: 1481844740

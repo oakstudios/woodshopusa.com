@@ -56,6 +56,26 @@ function initialize() {
   var infowindows = [];
   var geocoder = new google.maps.Geocoder();
   
+  geocoder.geocode({'address': 'Beebe - AK'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Beebe - AK'
+      });
+      var infowindowbeebeak = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Beebe, AK</h1><ul><li><a href="/products/bookends">Bookends</a></li></ul><p><a href="/products/in/beebe-ak" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowbeebeak.open(map,marker);
+      });
+      infowindows.push(infowindowbeebeak);
+    }
+  });
+  
   geocoder.geocode({'address': 'Chicopee - MA'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
