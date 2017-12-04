@@ -56,6 +56,66 @@ function initialize() {
   var infowindows = [];
   var geocoder = new google.maps.Geocoder();
   
+  geocoder.geocode({'address': 'Eau Claire - WI'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Eau Claire - WI'
+      });
+      var infowindoweauclairewi = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Eau Claire, WI</h1><ul><li><a href="/products/wooden-walking-goose">Wooden Walking Goose</a></li></ul><p><a href="/products/in/eau-claire-wi" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindoweauclairewi.open(map,marker);
+      });
+      infowindows.push(infowindoweauclairewi);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Chaska - MN'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Chaska - MN'
+      });
+      var infowindowchaskamn = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Chaska, MN</h1><ul><li><a href="/products/wood-banner">Wood Banner</a></li></ul><p><a href="/products/in/chaska-mn" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowchaskamn.open(map,marker);
+      });
+      infowindows.push(infowindowchaskamn);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Waco - TX'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Waco - TX'
+      });
+      var infowindowwacotx = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Waco, TX</h1><ul><li><a href="/products/leather-handle-wooden-tray">Leather Handle Wooden Tray</a></li><li><a href="/products/nesting-houses">Nesting Houses</a></li><li><a href="/products/mug">Mug</a></li></ul><p><a href="/products/in/waco-tx" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowwacotx.open(map,marker);
+      });
+      infowindows.push(infowindowwacotx);
+    }
+  });
+  
   geocoder.geocode({'address': 'Yacolt - WA'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
@@ -93,26 +153,6 @@ function initialize() {
         infowindowsonomaca.open(map,marker);
       });
       infowindows.push(infowindowsonomaca);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Waco - TX'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Waco - TX'
-      });
-      var infowindowwacotx = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Waco, TX</h1><ul><li><a href="/products/nesting-houses">Nesting Houses</a></li><li><a href="/products/mug">Mug</a></li></ul><p><a href="/products/in/waco-tx" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowwacotx.open(map,marker);
-      });
-      infowindows.push(infowindowwacotx);
     }
   });
   

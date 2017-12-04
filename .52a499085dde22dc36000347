@@ -1,15 +1,24 @@
 ---
-time: 1512426836
+time: 1512428067
 inventory:
   "/products/index.html":
-    md5: e75f54277c6034ba673fcc47c1adc9de
-    time: 1512426772
+    md5: 69122fec698f3cfa90f2e87230bd8bf4
+    time: 1512428048
   "/index.html":
-    md5: e75f54277c6034ba673fcc47c1adc9de
-    time: 1512426772
+    md5: 69122fec698f3cfa90f2e87230bd8bf4
+    time: 1512428048
+  "/products/wooden-walking-goose/index.html":
+    md5: 95fcecb95574f0420704b764bca151ef
+    time: 1512428048
+  "/products/wood-banner/index.html":
+    md5: 9219b2a34c87ce0317497f682d674e1b
+    time: 1512428048
+  "/products/leather-handle-wooden-tray/index.html":
+    md5: 5e1377938c1887424c77bc5e585ad786
+    time: 1512428048
   "/products/ladder/index.html":
-    md5: fab5b32d83fc282d2e98d9cc5c273160
-    time: 1512426772
+    md5: 2db9d0e7f1ba1515d0e61742b6af645d
+    time: 1512428048
   "/products/whisk/index.html":
     md5: a63b367e3e28340964ff6c55286c136c
     time: 1512426772
@@ -20,11 +29,11 @@ inventory:
     md5: 24baf05b060e8d4a95ff363c42bf47eb
     time: 1512426773
   "/products/deer-teether/index.html":
-    md5: f1e653b775ea7e06aef71f77be1fe939
-    time: 1512426773
+    md5: 2e42f8428cf36001e3e9f092f8eb3102
+    time: 1512428048
   "/products/bookends/index.html":
-    md5: 670be77798c2c0090a7d7ba1a8cc729f
-    time: 1512426773
+    md5: ec14b45b632ba9bd6a69289bf4b4986e
+    time: 1512428048
   "/products/classic-coffeemaker/index.html":
     md5: 002f1e3ce18a457d09f013d8b3d3c418
     time: 1512426773
@@ -161,11 +170,20 @@ inventory:
     md5: 4194bded47100a44a63458a23978e12e
     time: 1512426774
   "/products/archive/index.html":
-    md5: 182ccb473874b60540b3e299f41a6d85
-    time: 1512426774
+    md5: 84edd7152db2049018fc987aeb581cf1
+    time: 1512428050
   "/products/by/index.html":
-    md5: 7d9837f32067b07a71cad47e631708d8
-    time: 1512426775
+    md5: d15d48e907290aeb7ec24e633e7889bc
+    time: 1512428050
+  "/products/by/chippewaddlers/index.html":
+    md5: 6b64b0ce8c3a80c6e8eb82059333846c
+    time: 1512428050
+  "/products/by/fsm-designs/index.html":
+    md5: d2a9df11573c92ef31d9fc37be42bb2b
+    time: 1512428050
+  "/products/by/magnolia/index.html":
+    md5: bd1e3d5e7b9c03578fe6be2899c5d0bb
+    time: 1512428050
   "/products/by/stump-and-twig/index.html":
     md5: 116fe139c21d9bc0672b65d036dca9ec
     time: 1512426775
@@ -174,9 +192,6 @@ inventory:
     time: 1512426775
   "/products/by/hearth-and-hand/index.html":
     md5: 058513959787652ab7e27a061b2b409b
-    time: 1512426775
-  "/products/by/magnolia/index.html":
-    md5: 8581af08a3a659302d1592e60069344d
     time: 1512426775
   "/products/by/clover-and-birch/index.html":
     md5: c391ee43cefa7314b7e5a779c58c1174
@@ -254,20 +269,20 @@ inventory:
     md5: b04862799f934e6203c37761e6821a4d
     time: 1512426775
   "/products/category/index.html":
-    md5: 3fa6a465bb96d3b89d5cdbd7696d5d20
-    time: 1512426776
+    md5: 49af683271ed119d89cdb23a25b84375
+    time: 1512428051
+  "/products/category/kids/index.html":
+    md5: c7e189c8df4dcd3166c06699f759b94b
+    time: 1512428051
   "/products/category/indoors/index.html":
-    md5: d2a371f908996c3bc4e6c7b321f2aaf1
-    time: 1512426776
+    md5: 363943d053a17068de7746ee77f51897
+    time: 1512428051
   "/products/category/kitchen/index.html":
     md5: fc4a6a5eb84b404e797812fc4d872bf5
     time: 1512426776
   "/products/category/art/index.html":
-    md5: 91d399a4170cd289218520d90a5152fd
-    time: 1512426776
-  "/products/category/kids/index.html":
-    md5: 599fa308258664aeb7b8694a612640cf
-    time: 1512426776
+    md5: dc9b6459c4fa2ac335f49f1d8b75db4d
+    time: 1512428051
   "/products/category/outdoors/index.html":
     md5: 55f085602426090b9581397ad5e5d90c
     time: 1512426776
@@ -281,16 +296,22 @@ inventory:
     md5: d0882d502049d5e6ef3550f53eac0d16
     time: 1512426776
   "/products/in/index.html":
-    md5: 2f18b26eec1186d9b9cfba90dc30747e
-    time: 1512426776
+    md5: a3dec585c4989781e7b4040a762bf28c
+    time: 1512428052
+  "/products/in/eau-claire-wi/index.html":
+    md5: 660565fc7dda502c3656feb5f6a45625
+    time: 1512428052
+  "/products/in/chaska-mn/index.html":
+    md5: 3fcb13b210093af488886b47b0119452
+    time: 1512428052
+  "/products/in/waco-tx/index.html":
+    md5: 512f9cfea85b7fc917c37d5f932706ac
+    time: 1512428052
   "/products/in/yacolt-wa/index.html":
     md5: 3c45b409e75562a936ffaeaf53099aa6
     time: 1512426776
   "/products/in/sonoma-ca/index.html":
     md5: aaff2a1993856cfafa6343e0d454f048
-    time: 1512426776
-  "/products/in/waco-tx/index.html":
-    md5: 5f8896b39c1224ef34ff1d39f16bce90
     time: 1512426776
   "/products/in/atlanta-ga/index.html":
     md5: d74ebbf638e384deb89997795243d6db
@@ -350,8 +371,17 @@ inventory:
     md5: a0173892de69c1d4aa9317e7506a5127
     time: 1512426777
   "/products/with/index.html":
-    md5: d547bf9f43f6b7b8f3984c2014364f6c
-    time: 1512426777
+    md5: baa6f3b73cbb76301b89b25c19beaf82
+    time: 1512428053
+  "/products/with/oak/index.html":
+    md5: 76ca77d74b0670c22f984638726e27b6
+    time: 1512428053
+  "/products/with/beech/index.html":
+    md5: 2fbea1cd917cec051d877c91f461e072
+    time: 1512428053
+  "/products/with/birch/index.html":
+    md5: 1f5ebedc9c6704f85caae5d91211c997
+    time: 1512428053
   "/products/with/walnut/index.html":
     md5: e4b3960bce7bb3f89ed3091cffd6eff6
     time: 1512426777
@@ -364,14 +394,8 @@ inventory:
   "/products/with/maple/index.html":
     md5: 589d5f59787bcd9d3071699ad8c604fa
     time: 1512426778
-  "/products/with/beech/index.html":
-    md5: 9d9d3db3ce8904d919b5ed969bcdddc9
-    time: 1512426778
   "/products/with/rubberwood/index.html":
     md5: d1c746523796c309c123908883fc1e1b
-    time: 1512426778
-  "/products/with/oak/index.html":
-    md5: 7538cc5f26382fb63cc55ee1d833d0a8
     time: 1512426778
   "/products/with/cedar/index.html":
     md5: 70e7a2f5ff8dce7e4930ce4d3e66fc49
@@ -381,9 +405,6 @@ inventory:
     time: 1512426778
   "/products/with/elm/index.html":
     md5: d199fceb89f9d29364fed2fb5b28e7f0
-    time: 1512426778
-  "/products/with/birch/index.html":
-    md5: 2312742995f15da00db4d2920e29af0a
     time: 1512426778
   "/products/with/zebrawood/index.html":
     md5: df234402ccea31bfe815441c85aa3eb4
@@ -407,8 +428,8 @@ inventory:
     md5: f268eb66f3f673e9bd26d296c529fb39
     time: 1512426778
   "/map/index.html":
-    md5: fdcb16512913833108790312944ba341
-    time: 1512426778
+    md5: 857acbabe9b3c8859df3c9ec9fce0dbe
+    time: 1512428054
   "/about/index.html":
     md5: 7677d6433c429ef8449b67305666b08c
     time: 1512426778
@@ -416,11 +437,11 @@ inventory:
     md5: f32c1c9a49415e0604b441e606996f52
     time: 1481844729
   "/sitemap.xml":
-    md5: 87462c2c8e77afcdc20056be6cd05d24
-    time: 1512426778
+    md5: 48e46cdbe1e51a481c5e32c16e72372e
+    time: 1512428054
   "/feed.xml":
-    md5: 260eb0d4d249ecb7fdf4f7594078bb22
-    time: 1512426778
+    md5: 8f8a6ec3f5571154ad3d6487f702c4c5
+    time: 1512428054
   "/assets/bestmade-american-felling-axe.jpg":
     md5: 23b32817882ca60378ac41b1b47c9aef
     time: 1481844729
@@ -533,8 +554,8 @@ inventory:
     md5: e282464a6997d62ac74daf226bafd4c1
     time: 1481844737
   "/scripts/js/map.js":
-    md5: 2c2b1ab3fb0710760403908dc6ed9ff0
-    time: 1512426778
+    md5: 761d37bc8c93c5b7cc5ed0f9fc1c8660
+    time: 1512428054
   "/assets/field-archery.jpg":
     md5: c4cce78c70ff03f4eba5079275e5c11f
     time: 1481844737
@@ -634,6 +655,15 @@ inventory:
   "/assets/img2c copy.jpg":
     md5: a63fd91cad3a9d6a3306e749398eaa3d
     time: 1512426778
+  "/assets/il_570xN.1331507425_alu5.jpg":
+    md5: 79cc32e7c0070deaca099c665182058e
+    time: 1512428054
+  "/assets/001_PRD_2017_06_23-24_1024x1024.jpg":
+    md5: 7cfcb3168a2dd7e723e24272ad204d6a
+    time: 1512428054
+  "/assets/il_570xN.1170628111_pqze.jpg":
+    md5: 4f14486f0ec186e063528d0ec427bd1c
+    time: 1512428054
   "/assets/uncle-googe-alphabet-blocks2.jpg":
     md5: 0328dd7e2427e4916e45293bb4398cb0
     time: 1481844740
