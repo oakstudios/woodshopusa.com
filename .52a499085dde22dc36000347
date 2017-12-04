@@ -1,15 +1,18 @@
 ---
-time: 1512422141
+time: 1512422361
 inventory:
   "/products/index.html":
-    md5: ae347701d510ed8622d3d7894a82df69
-    time: 1512422129
+    md5: 7f7a5988ccfb6dc8d7a5e993823da6c9
+    time: 1512422348
   "/index.html":
-    md5: ae347701d510ed8622d3d7894a82df69
-    time: 1512422129
+    md5: 7f7a5988ccfb6dc8d7a5e993823da6c9
+    time: 1512422348
+  "/products/nesting-houses/index.html":
+    md5: 3d8c5612e9c4772c48ee74abc87fb708
+    time: 1512422349
   "/products/mug/index.html":
-    md5: 5d28e31577d0c6e2e8f9685c29f76188
-    time: 1512422129
+    md5: fb1789837cd238bbb9d57a78cf3cc093
+    time: 1512422349
   "/products/deer-teether/index.html":
     md5: 29adc5a06abed92b45e724108390b42b
     time: 1512422129
@@ -152,11 +155,14 @@ inventory:
     md5: 6355c4c4c4a7d81d27c0ce37877378bf
     time: 1481844726
   "/products/archive/index.html":
-    md5: cc625812175452552dc31933475e7228
-    time: 1512422130
+    md5: f89dc9932f53bf2322ec287bc21d857f
+    time: 1512422350
   "/products/by/index.html":
-    md5: 076f2f309064a43f79e5dc90a5795d7c
-    time: 1512422130
+    md5: b921cb6d6ee78ba56f48f25131d7bebc
+    time: 1512422351
+  "/products/by/hearth-and-hand/index.html":
+    md5: 0cd3892827611e6cdaa68fd2f0863bcc
+    time: 1512422351
   "/products/by/magnolia/index.html":
     md5: 6004509e384b121bb299fd31505d734c
     time: 1512422130
@@ -236,17 +242,17 @@ inventory:
     md5: 0c822a5a26907839ea01f10dc0c0c328
     time: 1481844727
   "/products/category/index.html":
-    md5: 919288fafb0c91d44d1c0861ab470c5d
-    time: 1512422131
+    md5: d09e87b77f24a28a4219ccc3005d6bc5
+    time: 1512422351
+  "/products/category/art/index.html":
+    md5: 52c4d32149a79fc80d615675c4c7493d
+    time: 1512422351
   "/products/category/kitchen/index.html":
     md5: 2fcc0637e1433e0997fba03d4dca2e68
     time: 1512422131
   "/products/category/kids/index.html":
     md5: 0bcefb31aedc492b1494d90a99007df4
     time: 1512420837
-  "/products/category/art/index.html":
-    md5: 75b4f71cb98260bbc56ff612710c37ce
-    time: 1512420588
   "/products/category/outdoors/index.html":
     md5: a68f3058d910bf8b3a922d68e4409670
     time: 1481844727
@@ -260,11 +266,11 @@ inventory:
     md5: e12368131841c56be26a892bb439d44d
     time: 1481844728
   "/products/in/index.html":
-    md5: 8729a0e185fedcf475b684b821037d9e
-    time: 1512422132
+    md5: 401f441a1b1af6438c43cd413ce2ddce
+    time: 1512422352
   "/products/in/waco-tx/index.html":
-    md5: 9f4142955675b32d61a90577dde3e665
-    time: 1512422132
+    md5: b6c93a3264ba9f28f7c04580de17231d
+    time: 1512422352
   "/products/in/atlanta-ga/index.html":
     md5: 2027c6e22ef44f5f4d3a6045b0e34d43
     time: 1512420837
@@ -323,8 +329,11 @@ inventory:
     md5: 70bb3331c629456716b0fc325849e18e
     time: 1481844728
   "/products/with/index.html":
-    md5: 934ee22e5ede2695e5295de8db955e3d
-    time: 1512422132
+    md5: 69880afd2cfd930d6add4476c57a41d6
+    time: 1512422353
+  "/products/with/mango/index.html":
+    md5: b56c105f6a0b2ded628abdf0906c3c77
+    time: 1512422353
   "/products/with/cherry/index.html":
     md5: 3146efe6a8be6e59d39c7ffad84e3024
     time: 1512422133
@@ -377,8 +386,8 @@ inventory:
     md5: e4a7be051a446f881880506838dece45
     time: 1481844729
   "/map/index.html":
-    md5: a8816c2224e6ca2c923009b5f7b864af
-    time: 1512422133
+    md5: 1f0d74da139c70111dea83fc112f1b47
+    time: 1512422353
   "/about/index.html":
     md5: c14e2fc97f24f92731af44d24ebd81c7
     time: 1481844729
@@ -386,11 +395,11 @@ inventory:
     md5: f32c1c9a49415e0604b441e606996f52
     time: 1481844729
   "/sitemap.xml":
-    md5: 49a6e7cf96e283d5b4d1d779b2a0a1e6
-    time: 1512422133
+    md5: 63f13792c397ff8fb41b846b9aad1851
+    time: 1512422354
   "/feed.xml":
-    md5: a4eed33aa3231a38737652837b9c2095
-    time: 1512422133
+    md5: 5fa29fdb00cb5ed66903ebcebcd62024
+    time: 1512422354
   "/assets/bestmade-american-felling-axe.jpg":
     md5: 23b32817882ca60378ac41b1b47c9aef
     time: 1481844729
@@ -503,8 +512,8 @@ inventory:
     md5: e282464a6997d62ac74daf226bafd4c1
     time: 1481844737
   "/scripts/js/map.js":
-    md5: 288fef74235313d2f22a3e040afa4b0e
-    time: 1512422133
+    md5: 01e756b7ba6a045087bd64db92c2174c
+    time: 1512422354
   "/assets/field-archery.jpg":
     md5: c4cce78c70ff03f4eba5079275e5c11f
     time: 1481844737
@@ -592,6 +601,9 @@ inventory:
   "/assets/MGNLPRDCT_20_of_38_7ba7ce82-7523-4204-9e1c-4796a28b6239_1024x1024.jpg":
     md5: fd1d5f3a4547eb4c329dd1504eecf649
     time: 1512422134
+  "/assets/52591970.jpeg":
+    md5: bc902859389196029dbf45715442b903
+    time: 1512422354
   "/assets/uncle-googe-alphabet-blocks2.jpg":
     md5: 0328dd7e2427e4916e45293bb4398cb0
     time: 1481844740

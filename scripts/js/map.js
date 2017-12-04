@@ -64,7 +64,7 @@ function initialize() {
           title: 'Waco - TX'
       });
       var infowindowwacotx = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Waco, TX</h1><ul><li><a href="/products/mug">Mug</a></li></ul><p><a href="/products/in/waco-tx" class="view-all">View all</a></p>'
+        content: '<h1 class="post-title">Waco, TX</h1><ul><li><a href="/products/nesting-houses">Nesting Houses</a></li><li><a href="/products/mug">Mug</a></li></ul><p><a href="/products/in/waco-tx" class="view-all">View all</a></p>'
       });
       google.maps.event.addListener(marker, 'click', function() {
         for (var i=0;i<infowindows.length;i++) {
