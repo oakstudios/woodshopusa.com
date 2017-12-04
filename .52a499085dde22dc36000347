@@ -1,15 +1,21 @@
 ---
-time: 1512429047
+time: 1512429879
 inventory:
   "/products/index.html":
-    md5: 47587ab65bf5e264e70cda1e31c96b15
-    time: 1512429026
+    md5: 71f57023d3d63dd4f59b9414e9c238de
+    time: 1512429861
   "/index.html":
-    md5: 47587ab65bf5e264e70cda1e31c96b15
-    time: 1512429026
+    md5: 71f57023d3d63dd4f59b9414e9c238de
+    time: 1512429861
+  "/products/bow-tie/index.html":
+    md5: 126f58422f24b75136d2a981bc311d83
+    time: 1512429861
+  "/products/coasters/index.html":
+    md5: 329dce7fdf7af442ebd50ca051d2f8da
+    time: 1512429861
   "/products/tree-pennant/index.html":
-    md5: 01dc4e5ce8d63113fbb9c99db96f0c87
-    time: 1512429026
+    md5: a81350f0d257e1af6ed3f507d0304a3c
+    time: 1512429861
   "/products/slab-pedastal/index.html":
     md5: f4592a328c9e6ca035ab5f6d5d6c0614
     time: 1512429026
@@ -182,11 +188,17 @@ inventory:
     md5: 4194bded47100a44a63458a23978e12e
     time: 1512426774
   "/products/archive/index.html":
-    md5: 325c73072506d0b5d5a5ffe6c5df872d
-    time: 1512429028
+    md5: 8fc66a91513a3f95642b76dd6b4bf281
+    time: 1512429864
   "/products/by/index.html":
-    md5: 1c06d2683f6522764d121fe56fe88f73
-    time: 1512429029
+    md5: 61750c167cd9fb539ce2c02a594cfe6a
+    time: 1512429864
+  "/products/by/two-guys-bow-tie/index.html":
+    md5: 0a5159cbbb1b66d86e1c1a34e28a1440
+    time: 1512429864
+  "/products/by/susies-wood-shop/index.html":
+    md5: d4568bcb24db94b452bf902a97f89684
+    time: 1512429864
   "/products/by/fsm-designs/index.html":
     md5: 5f8637b1ab73a54286629348a7644e5e
     time: 1512429029
@@ -195,9 +207,6 @@ inventory:
     time: 1512429029
   "/products/by/edge-woodworking/index.html":
     md5: 8443e326e97cb8bd57188f8d8921e48a
-    time: 1512429029
-  "/products/by/susies-wood-shop/index.html":
-    md5: 012f59eb45fec266f3d6fa0d140f3946
     time: 1512429029
   "/products/by/chippewaddlers/index.html":
     md5: 6b64b0ce8c3a80c6e8eb82059333846c
@@ -287,13 +296,16 @@ inventory:
     md5: b04862799f934e6203c37761e6821a4d
     time: 1512426775
   "/products/category/index.html":
-    md5: 546a7094c4972098a28356bc1fdc2b9a
-    time: 1512429030
+    md5: bd1fe29b3e7620333b306ec9a637e07a
+    time: 1512429865
+  "/products/category/wear/index.html":
+    md5: dc99214cdc803e42e57001021da2116d
+    time: 1512429865
+  "/products/category/indoors/index.html":
+    md5: 713045cfee3491e469b3a83eb2cf5657
+    time: 1512429866
   "/products/category/holiday/index.html":
     md5: 3ea0814dec25a92e771ba723a56fa6b5
-    time: 1512429030
-  "/products/category/indoors/index.html":
-    md5: 1a7a8291f010e2380fd8aa19a9a6b6af
     time: 1512429030
   "/products/category/kids/index.html":
     md5: c7e189c8df4dcd3166c06699f759b94b
@@ -307,15 +319,18 @@ inventory:
   "/products/category/outdoors/index.html":
     md5: 55f085602426090b9581397ad5e5d90c
     time: 1512426776
-  "/products/category/wear/index.html":
-    md5: f1871dfc30b01e0fac03f45ca7cf2502
-    time: 1512426776
   "/products/category/gadgets/index.html":
     md5: af6127316aa334c30fe0d0178e463e6d
     time: 1512426776
   "/products/in/index.html":
-    md5: dbbd17b614bb24681af1bae7723977af
-    time: 1512429031
+    md5: b6d30a0e432990f48e1e1730f443dfa3
+    time: 1512429866
+  "/products/in/tulsa-ok/index.html":
+    md5: 7c107fa691492c15fb2d3608d6c1e3a4
+    time: 1512429866
+  "/products/in/mapleton-ut/index.html":
+    md5: 3b786e69773a02fa478a16282d9447c7
+    time: 1512429866
   "/products/in/chaska-mn/index.html":
     md5: 27a1fb735fcf57b1e1e9675aaf37b16e
     time: 1512429031
@@ -324,9 +339,6 @@ inventory:
     time: 1512429031
   "/products/in/mesa-az/index.html":
     md5: 7bc85a7791d9a28f900bff7d781732fb
-    time: 1512429031
-  "/products/in/mapleton-ut/index.html":
-    md5: ab379b4e9f0f31666925cd6d4c42d495
     time: 1512429031
   "/products/in/eau-claire-wi/index.html":
     md5: 660565fc7dda502c3656feb5f6a45625
@@ -395,13 +407,16 @@ inventory:
     md5: a0173892de69c1d4aa9317e7506a5127
     time: 1512426777
   "/products/with/index.html":
-    md5: 0ac18678195ba7eb8b7a4a8f16331cfc
-    time: 1512429031
+    md5: f8bfde1e75f2c215e861f603cc05b8c2
+    time: 1512429867
+  "/products/with/shedua/index.html":
+    md5: 7cc1977e4263dcdd86a228060eadcbc7
+    time: 1512429867
+  "/products/with/reclaimed/index.html":
+    md5: fd548653143ca7cfac37573a07eb806d
+    time: 1512429867
   "/products/with/birch/index.html":
     md5: d915d9b5bee98630cb7bb299cfc8f614
-    time: 1512429032
-  "/products/with/reclaimed/index.html":
-    md5: 2d8731e21b09c47dcc07b10a478eb343
     time: 1512429032
   "/products/with/walnut/index.html":
     md5: 3379bae6b648335d9b7c920b555846d7
@@ -458,8 +473,8 @@ inventory:
     md5: edde7d8626266f0ccb6f617ce45486f1
     time: 1512429032
   "/map/index.html":
-    md5: 810c029d741c463f4c59708b77c2f9b6
-    time: 1512429032
+    md5: 7d814c18cf14226499057f4bedbc79ef
+    time: 1512429868
   "/about/index.html":
     md5: 7677d6433c429ef8449b67305666b08c
     time: 1512426778
@@ -467,11 +482,11 @@ inventory:
     md5: f32c1c9a49415e0604b441e606996f52
     time: 1481844729
   "/sitemap.xml":
-    md5: d16746e0d0e7a5d7d928151cb230bf44
-    time: 1512429033
+    md5: 34e3cc70f30da5319d79f037e600b528
+    time: 1512429868
   "/feed.xml":
-    md5: 2fff42ed37ffe638e6472581950dde1c
-    time: 1512429033
+    md5: 01d5334703242d83e54711d64861ba8c
+    time: 1512429868
   "/assets/bestmade-american-felling-axe.jpg":
     md5: 23b32817882ca60378ac41b1b47c9aef
     time: 1481844729
@@ -584,8 +599,8 @@ inventory:
     md5: e282464a6997d62ac74daf226bafd4c1
     time: 1481844737
   "/scripts/js/map.js":
-    md5: 8e3a738ba618b6a149fa010766f4cc0d
-    time: 1512429033
+    md5: 2817b3d6bbda288f2edb0c44426b46cd
+    time: 1512429868
   "/assets/field-archery.jpg":
     md5: c4cce78c70ff03f4eba5079275e5c11f
     time: 1481844737
@@ -706,6 +721,12 @@ inventory:
   "/assets/il_570xN.1284291826_5d0o.jpg":
     md5: 1f3be80dee5084d1ad122d0a3c730836
     time: 1512429033
+  "/assets/il_570xN.723253952_oxk5.jpg":
+    md5: d40a5f603a950d5852f130879286c5c1
+    time: 1512429869
+  "/assets/Walter_New_Edit__91355.1499450506.1280.1280.jpg":
+    md5: 57d18d8d85cef3df30f6889afc7143cf
+    time: 1512429869
   "/assets/uncle-googe-alphabet-blocks2.jpg":
     md5: 0328dd7e2427e4916e45293bb4398cb0
     time: 1481844740

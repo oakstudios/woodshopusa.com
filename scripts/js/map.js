@@ -56,6 +56,46 @@ function initialize() {
   var infowindows = [];
   var geocoder = new google.maps.Geocoder();
   
+  geocoder.geocode({'address': 'Tulsa - OK'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Tulsa - OK'
+      });
+      var infowindowtulsaok = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Tulsa, OK</h1><ul><li><a href="/products/bow-tie">Bow Tie</a></li></ul><p><a href="/products/in/tulsa-ok" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowtulsaok.open(map,marker);
+      });
+      infowindows.push(infowindowtulsaok);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Mapleton - UT'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Mapleton - UT'
+      });
+      var infowindowmapletonut = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Mapleton, UT</h1><ul><li><a href="/products/coasters">Coasters</a></li><li><a href="/products/candle-holders">Candle Holders</a></li></ul><p><a href="/products/in/mapleton-ut" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowmapletonut.open(map,marker);
+      });
+      infowindows.push(infowindowmapletonut);
+    }
+  });
+  
   geocoder.geocode({'address': 'Chaska - MN'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
@@ -113,26 +153,6 @@ function initialize() {
         infowindowmesaaz.open(map,marker);
       });
       infowindows.push(infowindowmesaaz);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Mapleton - UT'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Mapleton - UT'
-      });
-      var infowindowmapletonut = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Mapleton, UT</h1><ul><li><a href="/products/candle-holders">Candle Holders</a></li></ul><p><a href="/products/in/mapleton-ut" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowmapletonut.open(map,marker);
-      });
-      infowindows.push(infowindowmapletonut);
     }
   });
   
