@@ -56,26 +56,6 @@ function initialize() {
   var infowindows = [];
   var geocoder = new google.maps.Geocoder();
   
-  geocoder.geocode({'address': 'Waukesha - WI'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Waukesha - WI'
-      });
-      var infowindowwaukeshawi = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Waukesha, WI</h1><ul><li><a href="/products/merry-and-bright-banner">Merry and Bright Banner</a></li></ul><p><a href="/products/in/waukesha-wi" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowwaukeshawi.open(map,marker);
-      });
-      infowindows.push(infowindowwaukeshawi);
-    }
-  });
-  
   geocoder.geocode({'address': 'Sonoma - CA'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
