@@ -56,6 +56,86 @@ function initialize() {
   var infowindows = [];
   var geocoder = new google.maps.Geocoder();
   
+  geocoder.geocode({'address': 'Cincinnati - OH'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Cincinnati - OH'
+      });
+      var infowindowcincinnatioh = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Cincinnati, OH</h1><ul><li><a href="/products/bookmark">Bookmark</a></li></ul><p><a href="/products/in/cincinnati-oh" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowcincinnatioh.open(map,marker);
+      });
+      infowindows.push(infowindowcincinnatioh);
+    }
+  });
+  
+  geocoder.geocode({'address': 'San Antonio - TX'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'San Antonio - TX'
+      });
+      var infowindowsanantoniotx = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">San Antonio, TX</h1><ul><li><a href="/products/hooray-cake-topper">Hooray Cake Topper</a></li></ul><p><a href="/products/in/san-antonio-tx" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowsanantoniotx.open(map,marker);
+      });
+      infowindows.push(infowindowsanantoniotx);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Chaska - MN'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Chaska - MN'
+      });
+      var infowindowchaskamn = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Chaska, MN</h1><ul><li><a href="/products/basketball-hoop">Basketball Hoop</a></li><li><a href="/products/tree-pennant">Tree Pennant</a></li><li><a href="/products/wood-banner">Wood Banner</a></li></ul><p><a href="/products/in/chaska-mn" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowchaskamn.open(map,marker);
+      });
+      infowindows.push(infowindowchaskamn);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Wilson - CT'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Wilson - CT'
+      });
+      var infowindowwilsonct = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Wilson, CT</h1><ul><li><a href="/products/barbecue-toy-set">Barbecue Toy Set</a></li></ul><p><a href="/products/in/wilson-ct" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowwilsonct.open(map,marker);
+      });
+      infowindows.push(infowindowwilsonct);
+    }
+  });
+  
   geocoder.geocode({'address': 'Tulsa - OK'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
@@ -93,26 +173,6 @@ function initialize() {
         infowindowmapletonut.open(map,marker);
       });
       infowindows.push(infowindowmapletonut);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Chaska - MN'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Chaska - MN'
-      });
-      var infowindowchaskamn = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Chaska, MN</h1><ul><li><a href="/products/tree-pennant">Tree Pennant</a></li><li><a href="/products/wood-banner">Wood Banner</a></li></ul><p><a href="/products/in/chaska-mn" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowchaskamn.open(map,marker);
-      });
-      infowindows.push(infowindowchaskamn);
     }
   });
   
