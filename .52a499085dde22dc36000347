@@ -1,18 +1,15 @@
 ---
-time: 1512444493
+time: 1512491024
 inventory:
   "/products/index.html":
-    md5: 2525dfd638ecfa532b3950681857f75c
-    time: 1512444467
+    md5: 945113feb02408607ea0c8992a4182cf
+    time: 1512491010
   "/index.html":
-    md5: 2525dfd638ecfa532b3950681857f75c
-    time: 1512444467
-  "/products/bookmark/index.html":
-    md5: 000c55e6bcee0672715457b6339e348f
-    time: 1512444467
+    md5: 945113feb02408607ea0c8992a4182cf
+    time: 1512491010
   "/products/hooray-cake-topper/index.html":
-    md5: 727a95832a36c14f492b86249d777f53
-    time: 1512444467
+    md5: a16ff2b8c2714b7621d7f3a7ede334b6
+    time: 1512491010
   "/products/basketball-hoop/index.html":
     md5: b12966977ec67ae78dc0321c701b82d4
     time: 1512444467
@@ -200,14 +197,11 @@ inventory:
     md5: 4194bded47100a44a63458a23978e12e
     time: 1512426774
   "/products/archive/index.html":
-    md5: d344660224cf8bcf84dc3c1b31316b5c
-    time: 1512444470
+    md5: 717551f2f071a4ed432941f753dd3126
+    time: 1512491013
   "/products/by/index.html":
-    md5: f878a75a364a2b38dbc851dd881c55df
-    time: 1512444470
-  "/products/by/lucca-workshop/index.html":
-    md5: c5e0dfcd565e6c9d11052d83d040a09e
-    time: 1512444470
+    md5: 46f652b828b6908d20c3104d21c0ad16
+    time: 1512491013
   "/products/by/worthwrite-goods/index.html":
     md5: 28a15c138fc457452075997d47c283f6
     time: 1512444470
@@ -317,11 +311,8 @@ inventory:
     md5: b04862799f934e6203c37761e6821a4d
     time: 1512426775
   "/products/category/index.html":
-    md5: 914b148f150c925af790a79a87ef2e6e
-    time: 1512444471
-  "/products/category/gadgets/index.html":
-    md5: 1d50ba555d6e74f896627f7432b7898b
-    time: 1512444471
+    md5: f4d0ac2481ebcf40bf2927bf5961ad1d
+    time: 1512491014
   "/products/category/holiday/index.html":
     md5: 9f70a88ea84f2c9777f2ffb7f8a94c01
     time: 1512444471
@@ -343,12 +334,12 @@ inventory:
   "/products/category/art/index.html":
     md5: dc9b6459c4fa2ac335f49f1d8b75db4d
     time: 1512428051
+  "/products/category/gadgets/index.html":
+    md5: af6127316aa334c30fe0d0178e463e6d
+    time: 1512491015
   "/products/in/index.html":
-    md5: 8b2fd300657920416550d2c5648782c2
-    time: 1512444472
-  "/products/in/cincinnati-oh/index.html":
-    md5: 37cf24236db9b2bb1c2e9287a9cd7a5e
-    time: 1512444472
+    md5: 01340ba26b4f42a27ddb13a878783208
+    time: 1512491015
   "/products/in/san-antonio-tx/index.html":
     md5: 8a76b36a0a4f9022d8053829d351dbec
     time: 1512444472
@@ -437,11 +428,11 @@ inventory:
     md5: a0173892de69c1d4aa9317e7506a5127
     time: 1512426777
   "/products/with/index.html":
-    md5: ee5f87f96d4fb87a163e41776e768382
-    time: 1512444473
+    md5: a9ae9bff72e135bd087ac435e0b34ca3
+    time: 1512491017
   "/products/with/adler/index.html":
-    md5: 1b76c1d29e3fb8af429b448ddfa49237
-    time: 1512444473
+    md5: 1bcd526f3c2877cf55fa189a5eac4b13
+    time: 1512491017
   "/products/with/reclaimed/index.html":
     md5: b5911abe55f9f6658a7c2d8182cfaa8a
     time: 1512444473
@@ -506,8 +497,8 @@ inventory:
     md5: edde7d8626266f0ccb6f617ce45486f1
     time: 1512429032
   "/map/index.html":
-    md5: 43d562e4429a391ec7662bb85c13839f
-    time: 1512444474
+    md5: 5ae416b6592abc9b13d75607435fd1af
+    time: 1512491018
   "/about/index.html":
     md5: 7677d6433c429ef8449b67305666b08c
     time: 1512426778
@@ -515,11 +506,11 @@ inventory:
     md5: f32c1c9a49415e0604b441e606996f52
     time: 1481844729
   "/sitemap.xml":
-    md5: bb6cae8f780a3ecf21cb7839c72e0a19
-    time: 1512444474
+    md5: f68da6ca135e572e4d79a727ebba1980
+    time: 1512491018
   "/feed.xml":
-    md5: 8fcfe873daa79483e6cb91c0300d9fe3
-    time: 1512444475
+    md5: 062a3a38b2146834df1d9401940920b1
+    time: 1512491018
   "/assets/bestmade-american-felling-axe.jpg":
     md5: 23b32817882ca60378ac41b1b47c9aef
     time: 1481844729
@@ -632,8 +623,8 @@ inventory:
     md5: e282464a6997d62ac74daf226bafd4c1
     time: 1481844737
   "/scripts/js/map.js":
-    md5: eb8436639494a2bac49abe3cef6b2308
-    time: 1512444475
+    md5: 851c88fff1cf24036864012b99b89bc1
+    time: 1512491018
   "/assets/field-archery.jpg":
     md5: c4cce78c70ff03f4eba5079275e5c11f
     time: 1481844737
