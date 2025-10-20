@@ -56,43 +56,103 @@ function initialize() {
   var infowindows = [];
   var geocoder = new google.maps.Geocoder();
   
-  geocoder.geocode({'address': 'San Antonio - TX'}, function(results, status) {
+  geocoder.geocode({'address': 'New York - NY'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
           map: map,
           position: results[0].geometry.location,
-          title: 'San Antonio - TX'
+          title: 'New York - NY'
       });
-      var infowindowsanantoniotx = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">San Antonio, TX</h1><ul><li><a href="/products/hooray-cake-topper">Hooray Cake Topper</a></li></ul><p><a href="/products/in/san-antonio-tx" class="view-all">View all</a></p>'
+      var infowindownewyorkny = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">New York, NY</h1><ul><li><a href="/products/all-day-yo-yo">All Day Yo-Yo</a></li><li><a href="/products/serving-hands">Serving Hands</a></li><li><a href="/products/linnea-bookshelf">Linnea Bookshelf</a></li><li><a href="/products/american-felling-axe">The Spark Axe</a></li></ul><p><a href="/products/in/new-york-ny" class="view-all">View all</a></p>'
       });
       google.maps.event.addListener(marker, 'click', function() {
         for (var i=0;i<infowindows.length;i++) {
           infowindows[i].close();
         }
-        infowindowsanantoniotx.open(map,marker);
+        infowindownewyorkny.open(map,marker);
       });
-      infowindows.push(infowindowsanantoniotx);
+      infowindows.push(infowindownewyorkny);
     }
   });
   
-  geocoder.geocode({'address': 'Chaska - MN'}, function(results, status) {
+  geocoder.geocode({'address': 'Eagle Mountain - UT'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
           map: map,
           position: results[0].geometry.location,
-          title: 'Chaska - MN'
+          title: 'Eagle Mountain - UT'
       });
-      var infowindowchaskamn = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Chaska, MN</h1><ul><li><a href="/products/basketball-hoop">Basketball Hoop</a></li><li><a href="/products/tree-pennant">Tree Pennant</a></li><li><a href="/products/wood-banner">Wood Banner</a></li></ul><p><a href="/products/in/chaska-mn" class="view-all">View all</a></p>'
+      var infowindoweaglemountainut = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Eagle Mountain, UT</h1><ul><li><a href="/products/koa-sun-ring">Koa ring</a></li></ul><p><a href="/products/in/eagle-mountain-ut" class="view-all">View all</a></p>'
       });
       google.maps.event.addListener(marker, 'click', function() {
         for (var i=0;i<infowindows.length;i++) {
           infowindows[i].close();
         }
-        infowindowchaskamn.open(map,marker);
+        infowindoweaglemountainut.open(map,marker);
       });
-      infowindows.push(infowindowchaskamn);
+      infowindows.push(infowindoweaglemountainut);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Vacaville - CA'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Vacaville - CA'
+      });
+      var infowindowvacavilleca = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Vacaville, CA</h1><ul><li><a href="/products/sandblasted-grapewood-plant-pot">Sandblasted Grapewood plant pot</a></li></ul><p><a href="/products/in/vacaville-ca" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowvacavilleca.open(map,marker);
+      });
+      infowindows.push(infowindowvacavilleca);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Fremont - CA'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Fremont - CA'
+      });
+      var infowindowfremontca = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Fremont, CA</h1><ul><li><a href="/products/wooden-earrings">Wooden Earrings</a></li></ul><p><a href="/products/in/fremont-ca" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowfremontca.open(map,marker);
+      });
+      infowindows.push(infowindowfremontca);
+    }
+  });
+  
+  geocoder.geocode({'address': 'New Orleans - LA'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'New Orleans - LA'
+      });
+      var infowindowneworleansla = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">New Orleans, LA</h1><ul><li><a href="/products/turntable">Custom Turntable</a></li></ul><p><a href="/products/in/new-orleans-la" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowneworleansla.open(map,marker);
+      });
+      infowindows.push(infowindowneworleansla);
     }
   });
   
@@ -116,26 +176,6 @@ function initialize() {
     }
   });
   
-  geocoder.geocode({'address': 'Tulsa - OK'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Tulsa - OK'
-      });
-      var infowindowtulsaok = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Tulsa, OK</h1><ul><li><a href="/products/bow-tie">Bow Tie</a></li></ul><p><a href="/products/in/tulsa-ok" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowtulsaok.open(map,marker);
-      });
-      infowindows.push(infowindowtulsaok);
-    }
-  });
-  
   geocoder.geocode({'address': 'Mapleton - UT'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
@@ -153,146 +193,6 @@ function initialize() {
         infowindowmapletonut.open(map,marker);
       });
       infowindows.push(infowindowmapletonut);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Waco - TX'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Waco - TX'
-      });
-      var infowindowwacotx = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Waco, TX</h1><ul><li><a href="/products/slab-pedastal">Slab Pedastal</a></li><li><a href="/products/leather-handle-wooden-tray">Leather Handle Wooden Tray</a></li><li><a href="/products/nesting-houses">Nesting Houses</a></li><li><a href="/products/mug">Mug</a></li></ul><p><a href="/products/in/waco-tx" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowwacotx.open(map,marker);
-      });
-      infowindows.push(infowindowwacotx);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Mesa - AZ'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Mesa - AZ'
-      });
-      var infowindowmesaaz = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Mesa, AZ</h1><ul><li><a href="/products/succulent-planter">Succulent Planter</a></li></ul><p><a href="/products/in/mesa-az" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowmesaaz.open(map,marker);
-      });
-      infowindows.push(infowindowmesaaz);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Eau Claire - WI'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Eau Claire - WI'
-      });
-      var infowindoweauclairewi = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Eau Claire, WI</h1><ul><li><a href="/products/wooden-walking-goose">Wooden Walking Goose</a></li></ul><p><a href="/products/in/eau-claire-wi" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindoweauclairewi.open(map,marker);
-      });
-      infowindows.push(infowindoweauclairewi);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Yacolt - WA'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Yacolt - WA'
-      });
-      var infowindowyacoltwa = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Yacolt, WA</h1><ul><li><a href="/products/ladder">Ladder</a></li></ul><p><a href="/products/in/yacolt-wa" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowyacoltwa.open(map,marker);
-      });
-      infowindows.push(infowindowyacoltwa);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Sonoma - CA'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Sonoma - CA'
-      });
-      var infowindowsonomaca = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Sonoma, CA</h1><ul><li><a href="/products/whisk">Whisk</a></li></ul><p><a href="/products/in/sonoma-ca" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowsonomaca.open(map,marker);
-      });
-      infowindows.push(infowindowsonomaca);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Atlanta - GA'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Atlanta - GA'
-      });
-      var infowindowatlantaga = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Atlanta, GA</h1><ul><li><a href="/products/deer-teether">Deer Teether</a></li></ul><p><a href="/products/in/atlanta-ga" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowatlantaga.open(map,marker);
-      });
-      infowindows.push(infowindowatlantaga);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Beebe - AK'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Beebe - AK'
-      });
-      var infowindowbeebeak = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Beebe, AK</h1><ul><li><a href="/products/bookends">Bookends</a></li></ul><p><a href="/products/in/beebe-ak" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowbeebeak.open(map,marker);
-      });
-      infowindows.push(infowindowbeebeak);
     }
   });
   
@@ -336,26 +236,6 @@ function initialize() {
     }
   });
   
-  geocoder.geocode({'address': 'Portland - OR'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Portland - OR'
-      });
-      var infowindowportlandor = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Portland, OR</h1><ul><li><a href="/products/round-watch">Round Watch</a></li><li><a href="/products/planter">Planter</a></li><li><a href="/products/lamp">Lamp</a></li><li><a href="/products/campfire-cologne">Campfire Cologne</a></li><li><a href="/products/belmont-sunglasses">Belmont Sunglasses</a></li></ul><p><a href="/products/in/portland-or" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowportlandor.open(map,marker);
-      });
-      infowindows.push(infowindowportlandor);
-    }
-  });
-  
   geocoder.geocode({'address': 'Indianapolis - IN'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
@@ -396,6 +276,26 @@ function initialize() {
     }
   });
   
+  geocoder.geocode({'address': 'Portland - OR'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Portland - OR'
+      });
+      var infowindowportlandor = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Portland, OR</h1><ul><li><a href="/products/planter">Planter</a></li><li><a href="/products/belmont-sunglasses">Belmont Sunglasses</a></li><li><a href="/products/dock-for-iphone">Dock for iPhone</a></li></ul><p><a href="/products/in/portland-or" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowportlandor.open(map,marker);
+      });
+      infowindows.push(infowindowportlandor);
+    }
+  });
+  
   geocoder.geocode({'address': 'Richmond - VA'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
@@ -404,7 +304,7 @@ function initialize() {
           title: 'Richmond - VA'
       });
       var infowindowrichmondva = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Richmond, VA</h1><ul><li><a href="/products/the-cube-speakers">The Cube Speakers</a></li></ul><p><a href="/products/in/richmond-va" class="view-all">View all</a></p>'
+        content: '<h1 class="post-title">Richmond, VA</h1><ul><li><a href="/products/raven-ii-speakers">Raven II Speakers</a></li></ul><p><a href="/products/in/richmond-va" class="view-all">View all</a></p>'
       });
       google.maps.event.addListener(marker, 'click', function() {
         for (var i=0;i<infowindows.length;i++) {
@@ -416,66 +316,6 @@ function initialize() {
     }
   });
   
-  geocoder.geocode({'address': 'Houston - TX'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Houston - TX'
-      });
-      var infowindowhoustontx = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Houston, TX</h1><ul><li><a href="/products/mini-cruiser-no-6">Mini-Cruiser No. 6</a></li></ul><p><a href="/products/in/houston-tx" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowhoustontx.open(map,marker);
-      });
-      infowindows.push(infowindowhoustontx);
-    }
-  });
-  
-  geocoder.geocode({'address': 'San Diego - CA'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'San Diego - CA'
-      });
-      var infowindowsandiegoca = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">San Diego, CA</h1><ul><li><a href="/products/the-butler">The Butler</a></li></ul><p><a href="/products/in/san-diego-ca" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowsandiegoca.open(map,marker);
-      });
-      infowindows.push(infowindowsandiegoca);
-    }
-  });
-  
-  geocoder.geocode({'address': 'New York - NY'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'New York - NY'
-      });
-      var infowindownewyorkny = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">New York, NY</h1><ul><li><a href="/products/american-felling-axe">American Felling Axe</a></li></ul><p><a href="/products/in/new-york-ny" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindownewyorkny.open(map,marker);
-      });
-      infowindows.push(infowindownewyorkny);
-    }
-  });
-  
   geocoder.geocode({'address': 'Grand Rapids - MI'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
@@ -484,7 +324,7 @@ function initialize() {
           title: 'Grand Rapids - MI'
       });
       var infowindowgrandrapidsmi = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Grand Rapids, MI</h1><ul><li><a href="/products/christmas-blocks">Christmas Blocks</a></li><li><a href="/products/classic-wooden-blocks">Classic Wooden Blocks</a></li></ul><p><a href="/products/in/grand-rapids-mi" class="view-all">View all</a></p>'
+        content: '<h1 class="post-title">Grand Rapids, MI</h1><ul><li><a href="/products/classic-wooden-blocks">Classic Wooden Blocks</a></li></ul><p><a href="/products/in/grand-rapids-mi" class="view-all">View all</a></p>'
       });
       google.maps.event.addListener(marker, 'click', function() {
         for (var i=0;i<infowindows.length;i++) {
@@ -493,46 +333,6 @@ function initialize() {
         infowindowgrandrapidsmi.open(map,marker);
       });
       infowindows.push(infowindowgrandrapidsmi);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Boston - MA'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Boston - MA'
-      });
-      var infowindowbostonma = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Boston, MA</h1><ul><li><a href="/products/moonbeam-turntable">Moonbeam Turntable</a></li></ul><p><a href="/products/in/boston-ma" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowbostonma.open(map,marker);
-      });
-      infowindows.push(infowindowbostonma);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Brooklyn - NY'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Brooklyn - NY'
-      });
-      var infowindowbrooklynny = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Brooklyn, NY</h1><ul><li><a href="/products/city-ornament">City Ornament</a></li><li><a href="/products/looper-voice-recorder">Looper Voice Recorder</a></li></ul><p><a href="/products/in/brooklyn-ny" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowbrooklynny.open(map,marker);
-      });
-      infowindows.push(infowindowbrooklynny);
     }
   });
   
@@ -556,23 +356,23 @@ function initialize() {
     }
   });
   
-  geocoder.geocode({'address': 'Latrobe - PA'}, function(results, status) {
+  geocoder.geocode({'address': 'Brooklyn - NY'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
           map: map,
           position: results[0].geometry.location,
-          title: 'Latrobe - PA'
+          title: 'Brooklyn - NY'
       });
-      var infowindowlatrobepa = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Latrobe, PA</h1><ul><li><a href="/products/wp-muddler">Muddler</a></li></ul><p><a href="/products/in/latrobe-pa" class="view-all">View all</a></p>'
+      var infowindowbrooklynny = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Brooklyn, NY</h1><ul><li><a href="/products/looper-voice-recorder">Looper Voice Recorder</a></li></ul><p><a href="/products/in/brooklyn-ny" class="view-all">View all</a></p>'
       });
       google.maps.event.addListener(marker, 'click', function() {
         for (var i=0;i<infowindows.length;i++) {
           infowindows[i].close();
         }
-        infowindowlatrobepa.open(map,marker);
+        infowindowbrooklynny.open(map,marker);
       });
-      infowindows.push(infowindowlatrobepa);
+      infowindows.push(infowindowbrooklynny);
     }
   });
   
@@ -593,26 +393,6 @@ function initialize() {
         infowindowwebsternh.open(map,marker);
       });
       infowindows.push(infowindowwebsternh);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Philadelphia - PA'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Philadelphia - PA'
-      });
-      var infowindowphiladelphiapa = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Philadelphia, PA</h1><ul><li><a href="/products/roped-anchors">Roped Anchors</a></li><li><a href="/products/camp-arrows">Camp Arrows</a></li></ul><p><a href="/products/in/philadelphia-pa" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowphiladelphiapa.open(map,marker);
-      });
-      infowindows.push(infowindowphiladelphiapa);
     }
   });
   
