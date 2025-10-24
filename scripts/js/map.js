@@ -56,6 +56,106 @@ function initialize() {
   var infowindows = [];
   var geocoder = new google.maps.Geocoder();
   
+  geocoder.geocode({'address': 'Middletown - DE'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Middletown - DE'
+      });
+      var infowindowmiddletownde = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Middletown, DE</h1><ul><li><a href="/products/handmade-pawfect-carving">Handmade Pawfect Carving</a></li></ul><p><a href="/products/in/middletown-de" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowmiddletownde.open(map,marker);
+      });
+      infowindows.push(infowindowmiddletownde);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Portland - OR'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Portland - OR'
+      });
+      var infowindowportlandor = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Portland, OR</h1><ul><li><a href="/products/wood-wall-shelf">Wood Wall Shelf</a></li><li><a href="/products/planter">Planter</a></li><li><a href="/products/belmont-sunglasses">Belmont Sunglasses</a></li><li><a href="/products/dock-for-iphone">Dock for iPhone</a></li></ul><p><a href="/products/in/portland-or" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowportlandor.open(map,marker);
+      });
+      infowindows.push(infowindowportlandor);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Port Washington - WI'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Port Washington - WI'
+      });
+      var infowindowportwashingtonwi = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Port Washington, WI</h1><ul><li><a href="/products/cedar-hanger-with-lavendar">Cedar Hanger with lavender</a></li></ul><p><a href="/products/in/port-washington-wi" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowportwashingtonwi.open(map,marker);
+      });
+      infowindows.push(infowindowportwashingtonwi);
+    }
+  });
+  
+  geocoder.geocode({'address': 'Brookhaven - PA'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'Brookhaven - PA'
+      });
+      var infowindowbrookhavenpa = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">Brookhaven, PA</h1><ul><li><a href="/products/wood-ballpoint-pen">Willow Wood Ballpoint Pen</a></li></ul><p><a href="/products/in/brookhaven-pa" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowbrookhavenpa.open(map,marker);
+      });
+      infowindows.push(infowindowbrookhavenpa);
+    }
+  });
+  
+  geocoder.geocode({'address': 'St Shelbyville - TN'}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location,
+          title: 'St Shelbyville - TN'
+      });
+      var infowindowstshelbyvilletn = new google.maps.InfoWindow({
+        content: '<h1 class="post-title">St Shelbyville, TN</h1><ul><li><a href="/products/heritage-collection-pencil-variety-pack">Heritage Collection - Pencil Variety Pack</a></li></ul><p><a href="/products/in/st-shelbyville-tn" class="view-all">View all</a></p>'
+      });
+      google.maps.event.addListener(marker, 'click', function() {
+        for (var i=0;i<infowindows.length;i++) {
+          infowindows[i].close();
+        }
+        infowindowstshelbyvilletn.open(map,marker);
+      });
+      infowindows.push(infowindowstshelbyvilletn);
+    }
+  });
+  
   geocoder.geocode({'address': 'New York - NY'}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
       var marker = new google.maps.Marker({
@@ -273,26 +373,6 @@ function initialize() {
         infowindowminneapolismn.open(map,marker);
       });
       infowindows.push(infowindowminneapolismn);
-    }
-  });
-  
-  geocoder.geocode({'address': 'Portland - OR'}, function(results, status) {
-    if (status == google.maps.GeocoderStatus.OK) {
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location,
-          title: 'Portland - OR'
-      });
-      var infowindowportlandor = new google.maps.InfoWindow({
-        content: '<h1 class="post-title">Portland, OR</h1><ul><li><a href="/products/planter">Planter</a></li><li><a href="/products/belmont-sunglasses">Belmont Sunglasses</a></li><li><a href="/products/dock-for-iphone">Dock for iPhone</a></li></ul><p><a href="/products/in/portland-or" class="view-all">View all</a></p>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        for (var i=0;i<infowindows.length;i++) {
-          infowindows[i].close();
-        }
-        infowindowportlandor.open(map,marker);
-      });
-      infowindows.push(infowindowportlandor);
     }
   });
   
